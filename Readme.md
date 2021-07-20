@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Egor Karaulov](https://up.htmlacademy.ru/adaptive/23/user/1429759).
-* Наставник: `Неизвестно`.
+- Студент: [Egor Karaulov](https://up.htmlacademy.ru/adaptive/23/user/1429759).
+- Наставник: `Александр Лесухин`.
 
 ---
 
