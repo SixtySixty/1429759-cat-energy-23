@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="main-nav wrapper">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-img" src="img/header__logo-img__logo.svg" alt="Логотип">
+      </a>
+      <a class="main-nav__title">
+        <img class="main-nav__title-img" src="img/footer__logo-img__title.png" width="101" height="18" alt="Cat energy">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list navigation-list">
+        <li class="navigation-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation-list__item  navigation-list__item--active">
+          <a>Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <h1 class="main__heading-main">Подбор программы</h1>
+      <p class="main__heading-text">
+        Заполните анкету, и мы подберем
+        программу питания для вашего кота
+      </p>
+      <form class="main__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="info">
+          <label class="info__label" for="name">ИМЯ:*</label>
+          <input class="info__input" id="name" name="name" type="text" value="барсик">
+          <label class="info__label" for="weight">Вес (кг):*</label>
+          <input class="info__input" id="weight" name="weight" type="text" value="7">
+          <label class="info__label" for="age">Возраст (лет):</label>
+          <input class="info__input" id="age" name="age" type="text" value="7">
+        </div>
+        <div class="select">
+          <label class="select__label" for="loseWeight">
+            <input class="select__input" id="loseWeight" name="question-select" type="radio" checked>
+            похудение
+          </label>
+          <label class="select__label" for="gainWeight">
+            <input class="select__input" id="gainWeight" name="question-select" type="radio">
+            Набор массы
+          </label>
+          <label class="select__label" for="unknow">
+            <input class="select__input" id="unknow" name="question-select" type="radio">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </div>
+        <div class="contact">
+          <h2 class="contact__title">Контактные данные (владельца кота)</h2>
+          <label class="contact__label" for="email">E-mail:*</label>
+          <input class="contact__input" type="email" id="email" name="email" value="kuklachev@gmail.com">
+          <label class="contact__label" for="phone">Телефон:*</label>
+          <input class="contact__input" type="tel" id="phone" name="phone" value="8 (960) 900-60-90">
+        </div>
+        <div class="comment">
+          <h2 class="comment__title">Комментарий</h2>
+          <textarea class="comment__textarea" name="\" cols="37" rows="10">
+            Расскажите обо всех повадках кота
+          </textarea>
+        </div>
+        <div class="options">
+          <h2 class="options__title">Дополнительно</h2>
+          <label class="options__label" for="sugar">
+            <input class="options__input" id="sugar" name="sugar" type="checkbox" checked>
+            сахарозаменитель
+          </label>
+          <label class="options__label" for="water">
+            <input class="options__input" id="water" name="water" type="checkbox">
+            питьевая вода
+          </label>
+          <label class="options__label" for="milk">
+            <input class="options__input" id="milk" name="milk" type="checkbox">
+            молоко
+          </label>
+          <label class="options__label" for="vitamins">
+            <input class="options__input" id="vitamins" name="vitamins" type="checkbox">
+            витамины
+          </label>
+          <button class="options__btn" type="submit">
+            отправить заявку
+          </button>
+          <p class="options__text">* — Обязательные поля</p>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="map">
+        <p class="location">
+          <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
+          <span class="location-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        </p>
+        <img class="map__img" src="img/map__img.jpg" width="320" height="362" alt="Карта">
+      </div>
+      <img class="footer__logo" src="img/footer__logo-img__title.png" width="128" height="24" alt="Cat energy">
+      <div class="footer__social social">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-item__link social-item__link--vkontakte" href="https://vk.com/htmlacademy">Мы в
+              Вконтакте</a>
+          </li>
+          <li class="social-item">
+            <a class="social-item__link social-item__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+          <li class="social-item">
+            <a class="social-item__link social-item__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+              Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M13.6901 0.0157537L13.548 0L0.0960693 1.40733V26.0129L13.548 34L27 26.0129V1.40733L13.6901 0.0157537ZM25.2407 25.0151L13.548 31.9573L1.8554 25.0151V14.9293L13.4989 21.8451L13.5182 23.0984L5.53018 18.3548L5.51965 19.5801L13.5375 24.3885L13.5568 25.675L5.5407 20.9174L5.53018 22.1427L13.548 26.9511L21.6431 22.1182V20.8929V16.909L25.2494 14.7595L25.2407 25.0151ZM25.2407 13.4519L22.0325 15.3319L20.5555 16.2071L13.5147 12.0201L13.5042 13.2454L19.5224 16.818L19.4698 16.8495L19.34 16.9247L18.484 17.4166L13.5147 14.4689L13.5042 15.6942L17.4263 18.0222L16.4966 18.6314L16.4756 18.6436L13.5147 16.902L13.5042 18.1273L15.4442 19.2615L13.4638 20.4483L1.88697 13.5762L13.4831 6.61831L25.2407 13.4519ZM25.2407 12.2266L13.4884 5.31075L1.8554 12.2196V2.9897L13.548 1.76442L25.2407 2.9897V12.2266Z"
+                fill="#666666" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="26.9039" height="34" fill="white" transform="translate(0.0960693)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
