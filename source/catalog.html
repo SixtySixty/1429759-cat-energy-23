@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
@@ -22,24 +23,24 @@
       </button>
       <ul class="main-nav__list navigation-list">
         <li class="navigation-list__item">
-          <a href="index.html">Главная</a>
+          <a href="index.html" class="navigation-list__item__link">Главная</a>
         </li>
         <li class="navigation-list__item  navigation-list__item--active">
           <a>Каталог продукции</a>
         </li>
         <li class="navigation-list__item">
-          <a href="form.html">Подбор программы</a>
+          <a href="form.html" class="navigation-list__item__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="main catalog-page">
     <div class="wrapper">
-      <h1 class="main__heading-main">
+      <h1 class="catalog-page__heading-main">
         Каталог продукции
       </h1>
       <h2 class="visually-hidden">Основные товары</h2>
-      <ul class="main__product-list product-list">
+      <ul class="catalog-page__product-list product-list">
         <li class="product-list__item product-item">
           <img class="product-item__img" src="img/catalog-1-desktop1.png"
             alt="изображение продукта cat energy pro 500 г" width="68" height="86">
@@ -177,7 +178,7 @@
           <div class="product-item__info product-item-info">
             <h3 class="product-item-info__title">
               <span>показать еще</span>
-              <span>100500 товаров</span>
+              <span class="product-item-info__title--show-more">100500 товаров</span>
             </h3>
             <p class="product-item__desc">
               На самом деле вкусов гораздо больше!
