@@ -1,0 +1,38 @@
+//colors
+@white: #ffffff;
+@black: #000000;
+@special_dark-grey: #444444;
+
+//fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+//code
+
+.description__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: @black;
+}
+
+.description__list {
+  list-style: none;
+  padding: 0;
+}
+
+.description__item {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  margin-bottom: 20px;
+}
+
+.description__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
