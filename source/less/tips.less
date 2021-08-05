@@ -10,9 +10,6 @@
 
 //code
 
-.tips {
-}
-
 .tip {
   width: 280px;
   height: 266px;
@@ -20,19 +17,30 @@
 }
 
 .tip__title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
+  padding-left: 75px;
   text-transform: uppercase;
   color: @black;
+}
+
+.tip__title-img--tiny-cat {
+  background: url("../img/tip-header__title-img__smallcat.png") no-repeat;
+  height: 53px;
+}
+
+.tip__title-img--big-cat {
+  background: url("../img/tip-header__title-img__bigcat.png") no-repeat;
+  height: 53px;
 }
 
 .tip-content {
   width: 227px;
   height: 90px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -41,11 +49,13 @@
 }
 
 .tip__text {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @black;
+  background: url("../img/tip-footer__link-img__arrow.svg") no-repeat;
+  background-position: 100px;
 }
