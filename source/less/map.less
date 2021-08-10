@@ -8,6 +8,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 //code
+
+.location-tablet {
+  width: 320px;
+  height: 114px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .location-tablet {
+    width: 768px;
+    height: 201px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visually-hidden-location--desktop {
+    display: none;
+  }
+}
+
+.visually-hidden-location--tablet {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .visually-hidden-location--tablet {
+    display: block;
+  }
+}
+
+.location-desktop {
+  background-color: @white;
+  width: 570px;
+  height: 201px;
+  position: absolute;
+}
+
 .location__text {
   font-family: "Oswald", sans-serif;
   font-style: normal;

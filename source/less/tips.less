@@ -10,10 +10,43 @@
 
 //code
 
+@media (min-width: @desktop-width) {
+  .tips__wrapper {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
 .tip {
   width: 280px;
-  height: 266px;
-  background-color: @basicgray;
+}
+
+@media (min-width: @tablet-width) {
+  .tip {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tip {
+    width: 570px;
+  }
+}
+
+.tip-indent {
+  margin-bottom: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .tip-indent {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tip-indent {
+    margin: 0 80px 0 0;
+  }
 }
 
 .tip__title {
@@ -25,16 +58,15 @@
   padding-left: 75px;
   text-transform: uppercase;
   color: @black;
+  margin: 0;
 }
 
 .tip__title-img--tiny-cat {
-  background: url("../img/tip-header__title-img__smallcat.png") no-repeat;
-  height: 53px;
+  background: url("../img/cat_back.svg") no-repeat, @basicgray;
 }
 
 .tip__title-img--big-cat {
-  background: url("../img/tip-header__title-img__bigcat.png") no-repeat;
-  height: 53px;
+  background: url("../img/cat_back2.svg") no-repeat, @basicgray;
 }
 
 .tip-content {
@@ -48,7 +80,7 @@
   color: @special_dark-grey;
 }
 
-.tip__text {
+.tip__link {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -57,5 +89,5 @@
   text-transform: uppercase;
   color: @black;
   background: url("../img/tip-footer__link-img__arrow.svg") no-repeat;
-  background-position: 100px;
+  text-decoration: none;
 }

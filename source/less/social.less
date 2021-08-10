@@ -8,9 +8,16 @@
 
 //code
 
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+  }
+}
+
 .social-list {
   list-style: none;
   padding: 0;
+  display: flex;
 }
 
 .social-item__link {
@@ -24,5 +31,9 @@
 }
 
 .social-item__link--vkontakte {
-  background-image: url("Projects/cat-energy/source/img/icon_vkontakte.svg");
+  margin-right: 36px;
+}
+
+.social-item__link--instagram {
+  margin-right: 33px;
 }

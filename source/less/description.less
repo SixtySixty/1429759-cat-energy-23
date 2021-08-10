@@ -9,6 +9,16 @@
 
 //code
 
+.description {
+  width: 279px;
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    width: 708px;
+  }
+}
+
 .description__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -23,16 +33,103 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .description__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
 .description__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.description__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .description__item {
+    height: 280px;
+  }
+
+  .description__item-1 {
+    width: 230px;
+    margin-right: 153px;
+    margin-bottom: 37px;
+  }
+
+  .description__item-2 {
+    width: 246px;
+    margin-bottom: 37px;
+  }
+
+  .description__item-3 {
+    width: 247px;
+    margin-right: 137px;
+    margin-bottom: 0;
+  }
+
+  .description__item-4 {
+    width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__item {
+    margin-bottom: 0;
+  }
+
+  .description__item-1 {
+    margin-right: 94px;
+  }
+
+  .description__item-2 {
+    margin-right: 79px;
+  }
+
+  .description__item-3 {
+    margin-right: 77px;
+  }
+}
+
+.description__item-icon {
+  width: 60px;
+  height: 60px;
+  background-color: @basic-green;
+  margin-right: 20px;
+}
+
+.description__item-icon__img--leaf {
+  margin: 14px 15px;
+}
+
+.description__item-icon__img--tub {
+  margin: 13px 16px 16px 15px;
+}
+
+.description__item-icon__img--eat {
+  margin: 15px 17px 15px 18px;
+}
+
+.description__item-icon__img--alarm {
+  margin: 13px 14px 14px 14px;
+}
+
+.description__item-text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: @special_dark-grey;
-  margin-bottom: 20px;
-}
-
-.description__item:nth-last-child(1) {
-  margin-bottom: 0;
+  margin: 0;
 }

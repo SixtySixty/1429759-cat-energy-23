@@ -8,6 +8,16 @@
 
 //code
 
+.wrapper {
+  position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    display: flex;
+  }
+}
+
 .banner__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -15,6 +25,7 @@
   font-size: 36px;
   line-height: 36px;
   color: @black;
+  margin: 0;
 }
 
 .banner__subtitle {
@@ -25,6 +36,11 @@
   line-height: 14px;
   text-transform: uppercase;
   color: @black;
+  margin: 0;
+}
+
+.banner-picture__img {
+  margin-bottom: 30px;
 }
 
 .banner__button {
@@ -40,4 +56,13 @@
   font-size: 14px;
   line-height: 18px;
   border: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .banner__button {
+    top: 50px;
+  }
 }
