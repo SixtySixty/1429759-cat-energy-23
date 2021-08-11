@@ -13,6 +13,19 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .navigation-list {
+    width: 440px;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation-list {
+    width: 478px;
+  }
+}
+
 .navigation-list__item {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -25,4 +38,35 @@
 .navigation-list__item__link {
   text-decoration: none;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1240px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__user {
+    width: 174px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__user {
+    width: 202px;
+  }
 }
