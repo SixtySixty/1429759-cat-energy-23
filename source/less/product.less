@@ -18,8 +18,65 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .product-list {
+    display: grid;
+    grid-template-columns: 384px 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-list {
+    display: grid;
+    grid-template-columns: 325px 325px 325px 245px;
+  }
+}
+
 .product-list__item {
   margin-bottom: 20px; //временные отступы, чтобы блоки не заходили друг на друга
+  height: 190px;
+}
+
+@media (min-width: @tablet-width) {
+  .product-list__item {
+    width: 324px;
+    height: 511px;
+    margin-bottom: 60px;
+    background: @basic-gray;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-list__item {
+    width: 245px;
+    margin-bottom: 63px;
+  }
+}
+
+.product-item {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .product-item {
+    flex-direction: column;
+  }
+}
+
+.product-list__item--show-more {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .product-item__img {
+    margin: auto;
+  }
+}
+
+.product-item__img--show-more {
+  margin: auto;
 }
 
 .product-item-info__title {
@@ -36,6 +93,15 @@
   color: @black-2;
 }
 
+.product-item__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: @special_dark-grey;
+}
+
 .product-item-info__props {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -43,6 +109,22 @@
   font-size: 12px;
   line-height: 16px;
   color: @special_dark-grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prop {
+  margin-right: 74px;
+}
+
+@media (min-width: @tablet-width) {
+  .prop {
+    margin-right: 161px;
+  }
+}
+
+.prop-feature {
+  margin: 0;
 }
 
 .product-item__link {
@@ -58,10 +140,23 @@
   padding: 8px 108px;
 }
 
+@media (min-width: @tablet-width) {
+  .product-item__link {
+    padding: 8px 90px;
+  }
+}
+
 .product-item__link--show-more {
   background: @basic-gray;
   color: @special_dark-grey;
-  padding: 8px 93px;
+  padding: 8px 92px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .product-item__desc {

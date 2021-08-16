@@ -8,44 +8,12 @@
 
 //code
 
-.navigation-list {
-  list-style: none;
-  padding: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .navigation-list {
-    width: 440px;
-    display: flex;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .navigation-list {
-    width: 478px;
-  }
-}
-
-.navigation-list__item {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.navigation-list__item__link {
-  text-decoration: none;
-  color: @black;
-}
-
 @media (min-width: @tablet-width) {
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
     width: 708px;
-    margin: 0 auto;
+    padding: 0 30px;
   }
 
   .main-nav__toggle {
@@ -56,12 +24,19 @@
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     width: 1240px;
+    padding: 0 110px;
   }
+}
+
+.main-nav__user {
+  padding: 10px 20px 18px 20px;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__user {
-    width: 174px;
+    padding: 0;
+    display: flex;
+    margin-top: 28px;
   }
 }
 
@@ -69,4 +44,87 @@
   .main-nav__user {
     width: 202px;
   }
+}
+
+.main-nav__logo {
+  margin-right: 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__title {
+    padding: 15px;
+  }
+}
+
+.main-nav__title-img {
+  margin-right: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__title-img {
+    margin: 0;
+  }
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation-list {
+    display: flex;
+  }
+}
+
+.visually-hidden-navigation-list {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .visually-hidden-navigation-list {
+    display: flex;
+  }
+}
+
+.navigation-list__item {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation-list__item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation-list__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .item-ident:nth-child(3) {
+    margin: 0;
+  }
+}
+
+.navigation-list__item__link {
+  text-decoration: none;
+  color: @black;
 }

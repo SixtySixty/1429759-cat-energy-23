@@ -10,15 +10,15 @@
 //code
 
 .location-tablet {
-  width: 320px;
-  height: 114px;
   margin: 0;
+  display: flex;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .location-tablet {
-    width: 768px;
-    height: 201px;
+    justify-content: space-between;
+    padding: 0 30px;
   }
 }
 
@@ -43,6 +43,8 @@
   width: 570px;
   height: 201px;
   position: absolute;
+  margin: 95px 0 104px 110px;
+  display: flex;
 }
 
 .location__text {
@@ -53,6 +55,21 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @black;
+  padding: 28px 2px 26px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .location__text {
+    font-size: 20px;
+    line-height: 21px;
+    padding: 66px 295px 51px 41px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__text {
+    padding: 66px;
+  }
 }
 
 .location-address {
@@ -62,4 +79,21 @@
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  padding: 28px 0 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .location-address {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 62px 42px 58px 0;
+    text-align: end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location-address {
+    padding: 66px;
+    text-align: start;
+  }
 }

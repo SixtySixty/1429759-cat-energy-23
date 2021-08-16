@@ -10,12 +10,20 @@
 //code
 
 .description {
-  width: 279px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .description {
-    width: 708px;
+    padding: 0 30px 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    padding: 0 110px;
+    border: 0;
   }
 }
 
@@ -26,6 +34,15 @@
   font-size: 36px;
   line-height: 40px;
   color: @black;
+  margin: 23px 0 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .description__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 45px 0 32px;
+  }
 }
 
 .description__list {
@@ -58,7 +75,8 @@
 
 @media (min-width: @tablet-width) {
   .description__item {
-    height: 280px;
+    display: block;
+    padding: 40px 0 57px;
   }
 
   .description__item-1 {
@@ -80,6 +98,32 @@
 
   .description__item-4 {
     width: 249px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .description__item-1 {
+    background: url("../img/1.png") no-repeat;
+    background-position-x: 120px;
+    background-position-y: 35px;
+  }
+
+  .description__item-2 {
+    background: url("../img/2.png") no-repeat;
+    background-position-x: 120px;
+    background-position-y: 35px;
+  }
+
+  .description__item-3 {
+    background: url("../img/3.png") no-repeat;
+    background-position-x: 120px;
+    background-position-y: 35px;
+  }
+
+  .description__item-4 {
+    background: url("../img/4.png") no-repeat;
+    background-position-x: 120px;
+    background-position-y: 35px;
   }
 }
 
@@ -108,6 +152,15 @@
   margin-right: 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .description__item-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+    margin-bottom: 31px;
+  }
+}
+
 .description__item-icon__img--leaf {
   margin: 14px 15px;
 }
@@ -124,6 +177,24 @@
   margin: 13px 14px 14px 14px;
 }
 
+@media (min-width: @tablet-width) {
+  .description__item-icon__img--leaf {
+    margin: 25px 26px 23px 24px;
+  }
+
+  .description__item-icon__img--tub {
+    margin: 24px 26px 25px 25px;
+  }
+
+  .description__item-icon__img--eat {
+    margin: 25px 27px 28px;
+  }
+
+  .description__item-icon__img--alarm {
+    margin: 23px 24px 24px;
+  }
+}
+
 .description__item-text {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -132,4 +203,11 @@
   line-height: 18px;
   color: @special_dark-grey;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .description__item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
