@@ -10,6 +10,17 @@
 
 //code
 
+.select {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .select {
+    width: 568px;
+  }
+}
+
 .select__label {
   font-family: "Oswald", sans-serif;
   font-style: normal;

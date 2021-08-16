@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 //code
+
 .options__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -16,6 +17,18 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .options-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .options__label {
@@ -26,6 +39,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .options__label {
+    width: 221px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .options__label-ident {
+    margin-right: 123px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options__label-ident {
+    margin: 0;
+  }
 }
 
 .options__btn {
@@ -50,4 +81,11 @@
   font-size: 14px;
   line-height: 16px;
   color: @black;
+  margin: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .options__text {
+    display: inline-block;
+  }
 }

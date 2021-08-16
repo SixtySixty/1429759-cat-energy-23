@@ -10,6 +10,18 @@
 
 //code
 
+.info {
+  //временные стили, чтобы форма не ломалась
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .info {
+    width: 569px;
+  }
+}
+
 .info__label {
   font-family: "Oswald", sans-serif;
   font-style: normal;

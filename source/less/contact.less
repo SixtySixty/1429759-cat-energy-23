@@ -10,6 +10,34 @@
 
 //code
 
+.contacts {
+  padding: 22px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 55px 30px 61px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    padding: 55px 110px 61px;
+  }
+}
+
+.footer-contacts__logo {
+  margin: 19px 76px 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-contacts__logo {
+    margin: 10px 0;
+  }
+}
+
 .contact__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -17,6 +45,19 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-list {
+    flex-direction: row;
+  }
 }
 
 .contact__label {

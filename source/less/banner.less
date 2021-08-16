@@ -10,6 +10,15 @@
 
 .banner__wrapper {
   position: relative;
+  background: url("../img/index-background-mobile.jpg") no-repeat;
+  background-size: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .banner__wrapper {
+    background: none;
+    padding: 0 30px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -24,8 +33,20 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: @black;
+  color: @white;
   margin: 0;
+  text-align: center;
+  padding: 27px 0 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .banner__title {
+    color: @black;
+    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 62px 88px 41px;
+  }
 }
 
 .banner__subtitle {
@@ -35,12 +56,30 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: @black;
+  color: @white;
   margin: 0;
+  text-align: center;
+  padding-bottom: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .banner__subtitle {
+    color: @black;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 90px 20px;
+  }
 }
 
 .banner-picture__img {
-  margin-bottom: 30px;
+  padding: 0 20px 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .banner-picture__img {
+    padding: 0;
+  }
 }
 
 .banner__button {
@@ -59,10 +98,18 @@
   display: block;
   position: absolute;
   bottom: 0;
+  margin: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .banner__button {
-    top: 50px;
+    top: 295px;
+    margin: 0;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 20px;
+    margin-left: 90px;
   }
 }

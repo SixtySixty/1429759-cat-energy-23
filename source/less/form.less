@@ -8,6 +8,22 @@
 
 //code
 
+.form__wrapper {
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    padding: 0 110px;
+  }
+}
+
 .form-page__heading-title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -24,4 +40,11 @@
   font-size: 14px;
   line-height: 18px;
   color: @black;
+}
+
+@media (min-width: @desktop-width) {
+  .information {
+    display: flex;
+    justify-content: space-between;
+  }
 }
