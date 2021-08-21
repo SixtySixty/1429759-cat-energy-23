@@ -8,10 +8,32 @@
 
 //code
 
+@media (min-width: @desktop-width) {
+  .banner {
+    height: 503px;
+  }
+}
+
+.banner-background {
+  background: rgba(104, 183, 56, 0.85);
+  opacity: 85%;
+  width: 320px;
+  height: 302px;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .banner-background {
+    display: none;
+  }
+}
+
 .banner__wrapper {
   position: relative;
   background: url("../img/index-background-mobile.jpg") no-repeat;
   background-size: auto;
+  z-index: 2;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,6 +46,13 @@
 @media (min-width: @desktop-width) {
   .banner__wrapper {
     display: flex;
+    padding: 0 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner-discription {
+    width: 610px;
   }
 }
 
@@ -46,6 +75,12 @@
     font-size: 60px;
     line-height: 60px;
     padding: 62px 88px 41px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__title {
+    padding: 110px 80px 40px;
   }
 }
 
@@ -72,6 +107,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .banner__subtitle {
+    padding: 0 80px 20px;
+  }
+}
+
 .banner-picture__img {
   padding: 0 20px 38px;
 }
@@ -83,9 +124,8 @@
 }
 
 .banner__button {
-  width: 280px;
   height: 40px;
-  padding: 7px 44px;
+  padding: 7px 69px;
   background-color: @basic-green;
   color: @white;
   font-family: "Oswald", sans-serif;
@@ -105,11 +145,31 @@
   .banner__button {
     top: 295px;
     margin: 0;
-    width: 244px;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 20px;
     margin-left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__button {
+    top: 340px;
+    margin-left: 80px;
+    padding: 14px 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__picture {
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner-picture__img {
+    position: absolute;
+    left: -130px;
   }
 }
