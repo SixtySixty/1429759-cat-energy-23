@@ -1,6 +1,7 @@
 //colors
 @white: #ffffff;
 @black: #000000;
+@grey: #f2f2f2;
 @special_dark-grey: #444444;
 @special_light-gray-2: #cdcdcd;
 
@@ -11,12 +12,20 @@
 //code
 
 .contacts {
-  padding: 22px 20px;
+  padding: 0 20px 20px;
+  background-color: @grey;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    padding: 55px 30px 61px;
+    background-color: @grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 60px 30px 57px;
+    height: 34px;
     display: flex;
     justify-content: space-between;
   }
@@ -28,13 +37,18 @@
   }
 }
 
-.footer-contacts__logo {
-  margin: 19px 76px 32px;
+.contacts__logo {
+  padding: 39px 32px;
+  display: block;
+  margin: auto;
+  width: 128px;
+  height: 34px;
 }
 
 @media (min-width: @tablet-width) {
-  .footer-contacts__logo {
-    margin: 10px 0;
+  .contacts__logo {
+    padding: 0;
+    margin: 0;
   }
 }
 

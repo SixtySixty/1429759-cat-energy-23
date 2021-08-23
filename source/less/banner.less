@@ -8,22 +8,74 @@
 
 //code
 
+@media (min-width: @desktop-width) {
+  .banner {
+    height: 640px;
+  }
+}
+
+.banner-background {
+  background: rgba(104, 183, 56, 0.85);
+  opacity: 85%;
+  width: 320px;
+  height: 302px;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .banner-background {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner-background {
+    width: 50%;
+    height: 682px;
+    right: 0;
+    top: 0;
+    display: block;
+    background: url("../img/index-background-desktop1.jpg") no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner-background--color {
+    background-color: @basic-green;
+    z-index: 1;
+    height: 682px;
+    opacity: 85%;
+  }
+}
+
 .banner__wrapper {
   position: relative;
   background: url("../img/index-background-mobile.jpg") no-repeat;
   background-size: auto;
+  z-index: 2;
+  max-width: 320px;
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .banner__wrapper {
     background: none;
-    padding: 0 30px;
+    max-width: 708px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .banner__wrapper {
     display: flex;
+    max-width: 1220px;
+    position: inherit;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner-discription {
+    width: 610px;
   }
 }
 
@@ -46,6 +98,12 @@
     font-size: 60px;
     line-height: 60px;
     padding: 62px 88px 41px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__title {
+    padding: 110px 80px 40px;
   }
 }
 
@@ -72,6 +130,16 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .banner__subtitle {
+    padding: 0 80px 20px;
+  }
+}
+
+.banner-picture {
+  display: flex;
+}
+
 .banner-picture__img {
   padding: 0 20px 38px;
 }
@@ -82,10 +150,16 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .banner-picture__img {
+    position: absolute;
+    left: -160px;
+  }
+}
+
 .banner__button {
-  width: 280px;
   height: 40px;
-  padding: 7px 44px;
+  padding: 7px 69px;
   background-color: @basic-green;
   color: @white;
   font-family: "Oswald", sans-serif;
@@ -105,11 +179,24 @@
   .banner__button {
     top: 295px;
     margin: 0;
-    width: 244px;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 20px;
     margin-left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__button {
+    top: 466px;
+    margin-left: 80px;
+    padding: 14px 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__picture {
+    position: relative;
   }
 }

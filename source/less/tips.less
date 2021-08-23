@@ -2,6 +2,7 @@
 @white: #ffffff;
 @black: #000000;
 @basicgray: #f2f2f2;
+@basic_white: #d9d9d9;
 @special_dark-grey: #444444;
 
 //fonts
@@ -11,51 +12,43 @@
 //code
 
 .tips__wrapper {
-  padding: 22px 20px 0;
+  max-width: 320px;
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .tips__wrapper {
     padding: 0 30px;
+    max-width: 708px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .tips__wrapper {
     display: flex;
-    padding: 0 110px;
+    max-width: 1220px;
+    justify-content: space-between;
+    padding: 0;
   }
 }
 
 .tip {
   width: 280px;
+  margin: 22px 20px;
 }
 
 @media (min-width: @tablet-width) {
   .tip {
     width: 708px;
+    margin: 0;
+    padding-bottom: 53px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .tip {
     width: 570px;
-  }
-}
-
-.tip-indent {
-  margin-bottom: 24px;
-}
-
-@media (min-width: @tablet-width) {
-  .tip-indent {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .tip-indent {
-    margin: 0 80px 0 0;
+    padding: 0;
   }
 }
 
@@ -87,6 +80,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .tip__title--tiny {
+    padding: 77px 53px 73px 214px;
+  }
+}
+
 .tip__title--big {
   padding: 30px 44px 29px 91px;
 }
@@ -97,47 +96,55 @@
   }
 }
 
-.tip__title-img--tiny-cat {
+@media (min-width: @desktop-width) {
+  .tip__title--big {
+    padding: 77px 53px 73px 214px;
+  }
+}
+
+.tip--tiny-cat {
   background: url("../img/cat_back.svg") no-repeat, @basicgray;
   background-position-x: 22px;
-  background-position-y: 22px;
+  background-position-y: 21px;
 }
 
 @media (min-width: @tablet-width) {
-  .tip__title-img--tiny-cat {
+  .tip--tiny-cat {
     background: url("../img/cat_tiny.png") no-repeat, @basicgray;
-    background-position-x: 450px;
-    background-position-y: 65px;
+    background-position-x: 446px;
+    background-position-y: 81px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .tip__title-img--tiny-cat {
+  .tip--tiny-cat {
     background: url("../img/cat_tiny.svg") no-repeat, @basicgray;
     background-position-x: 52px;
     background-position-y: 41px;
+    margin: 0;
   }
 }
 
-.tip__title-img--big-cat {
+.tip--big-cat {
   background: url("../img/cat_back2.svg") no-repeat, @basicgray;
   background-position-x: 13px;
   background-position-y: 24px;
 }
 
 @media (min-width: @tablet-width) {
-  .tip__title-img--big-cat {
+  .tip--big-cat {
     background: url("../img/cat_big.png") no-repeat, @basicgray;
-    background-position-x: 410px;
-    background-position-y: 90px;
+    background-position-x: 412px;
+    background-position-y: 91px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .tip__title-img--big-cat {
+  .tip--big-cat {
     background: url("../img/cat_big.svg") no-repeat, @basicgray;
-    background-position-x: 1px;
-    background-position-y: 1px;
+    background-position-x: 33px;
+    background-position-y: 47px;
   }
 }
 
@@ -164,6 +171,14 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .tip-content {
+    width: 467px;
+    height: 72px;
+    padding: 0 52px 23px;
+  }
+}
+
 .tip__link {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -171,14 +186,15 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: @black;
+  color: #000000;
   background: url("../img/tip-footer__link-img__arrow.svg") no-repeat;
   text-decoration: none;
-  padding: 15px 127px 18px 19px;
+  padding: 15px 107px 18px 0;
   display: block;
-  background-position-x: 125px;
+  background-position-x: 121px;
   background-position-y: 17px;
-  border-top: 1px solid @white;
+  border-top: 1px solid #d9d9d9;
+  margin: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -186,8 +202,17 @@
     border: none;
     font-size: 20px;
     line-height: 30px;
-    padding: 0 0 57px 52px;
-    background-position-x: 185px;
+    padding: 0;
+    margin-left: 52px;
+    background-position-x: 128px;
     background-position-y: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tip__link {
+    height: 38px;
+    padding: 0;
+    margin: 0 0 55px 52px;
   }
 }

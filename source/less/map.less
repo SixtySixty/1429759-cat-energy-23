@@ -12,18 +12,18 @@
 .location-tablet {
   margin: 0;
   display: flex;
+  justify-content: space-between;
   padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .location-tablet {
-    justify-content: space-between;
-    padding: 0 30px;
+    padding: 66px 71px 58px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .visually-hidden-location--desktop {
+  .location-tablet {
     display: none;
   }
 }
@@ -44,7 +44,13 @@
   height: 201px;
   position: absolute;
   margin: 95px 0 104px 110px;
-  display: flex;
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .location-desktop {
+    display: flex;
+  }
 }
 
 .location__text {
@@ -56,13 +62,16 @@
   text-transform: uppercase;
   color: @black;
   padding: 28px 2px 26px 0;
+  width: 140px;
 }
 
 @media (min-width: @tablet-width) {
   .location__text {
     font-size: 20px;
     line-height: 21px;
-    padding: 66px 295px 51px 41px;
+    padding: 0;
+    width: 171px;
+    height: 83px;
   }
 }
 
@@ -80,14 +89,17 @@
   line-height: 20px;
   color: @special_dark-grey;
   padding: 28px 0 26px;
+  width: 140px;
 }
 
 @media (min-width: @tablet-width) {
   .location-address {
     font-size: 16px;
     line-height: 20px;
-    padding: 62px 42px 58px 0;
+    padding: 0;
     text-align: end;
+    width: 160px;
+    height: 80px;
   }
 }
 
@@ -95,21 +107,44 @@
   .location-address {
     padding: 66px;
     text-align: start;
+    width: 180px;
   }
 }
 
-.map__img {
-  width: 320px;
+.location-address__text {
+  margin: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .location-address__text--ident {
+    margin-top: 19px;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .map__img {
-    width: 768px;
+  .location-address__text--street {
+    margin-bottom: 20px;
+  }
+}
+
+.map__picture {
+  display: flex;
+  margin: auto;
+  max-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .map__picture {
+    max-width: 768px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .map__img {
-    width: 1440px;
+  .map__picture {
+    max-width: 1440px;
   }
+}
+
+.map__img {
+  width: 100%;
 }
