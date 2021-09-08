@@ -4,21 +4,22 @@
 @special_dark-grey: #444444;
 @special_light-gray: #e7e7e7;
 
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
 
 .info {
-  //временные стили, чтобы форма не ломалась
-  display: flex;
-  flex-direction: column;
+  margin: 39px 0 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .info {
+    margin: 0 0 72px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .info {
     width: 569px;
+    margin-bottom: 0;
   }
 }
 
@@ -32,6 +33,13 @@
   color: @special_dark-grey;
 }
 
+@media (min-width: @tablet-width) {
+  .info__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .info__input {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -43,4 +51,77 @@
   border: 1px solid @special_light-gray;
   box-sizing: border-box;
   padding: 13px 16px;
+  margin-bottom: 13px;
+}
+
+.info__input:hover {
+  border-color: #cdcdcd;
+}
+
+.info__input:focus-visible {
+  border: 2px solid #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .info__input {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 18px 11px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__input {
+    padding: 10px 20px 11px;
+  }
+}
+
+.info__input-1 {
+  width: 228px;
+  margin-left: 10px;
+}
+
+.info__input-2 {
+  width: 204px;
+  margin-left: 12px;
+}
+
+.info__input-3 {
+  width: 170px;
+  margin: 0 0 0 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .info__input-1 {
+    width: 567px;
+    margin-left: 11px;
+  }
+
+  .info__input-2 {
+    width: 536px;
+    margin-left: 15px;
+  }
+
+  .info__input-3 {
+    width: 497px;
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__input-1 {
+    width: 502px;
+    margin-left: 16px;
+  }
+
+  .info__input-2 {
+    width: 471px;
+    margin-left: 19px;
+  }
+
+  .info__input-3 {
+    width: 426px;
+    margin-left: 22px;
+  }
 }

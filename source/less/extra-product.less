@@ -3,10 +3,8 @@
 @special-dark-grey: #444444;
 @special_dark-grey-2: #222222;
 @basic-green: #68b738;
-
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@special-gray: #cdcdcd;
+@basic_grey: #f2f2f2;
 
 //code
 
@@ -17,18 +15,62 @@
   font-size: 24px;
   line-height: 24px;
   color: @black;
+  margin: 25px 0 36px;
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .main__heading-secondary {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 81px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main__heading-secondary {
+    margin: 13px 0 80px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main__extra-product {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 86px;
   }
 }
 
 .extra-product-list {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-product-list {
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    max-width: 708px;
+    margin: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-product-list {
+    max-width: 896px;
+    border: 0;
+    margin: 0;
+  }
+}
+
+.extra-product-list__item {
+  padding: 13px 0 19px;
+  border-top: 1px solid @special-gray;
+}
+
+.extra-product-list__item:nth-child(4) {
+  border-bottom: 1px solid @special-gray;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,7 +83,7 @@
   .extra-product-list__item {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 15px 0 16px;
   }
 }
 
@@ -49,6 +91,15 @@
   .extra-product-item {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-product-item {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    margin-right: 38px;
   }
 }
 
@@ -60,6 +111,22 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @special_dark-grey-2;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-product-item__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-product-item__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: auto 0;
+  }
 }
 
 .extra-product-item__props {
@@ -71,6 +138,34 @@
   font-size: 14px;
   line-height: 14px;
   color: @special-dark-grey;
+  margin: 13px 0 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-product-item__props {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .extra-product-item-proops--ident {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-product-item__props {
+    font-size: 16px;
+    line-height: 20px;
+    margin: auto 0;
+    width: 280px;
+    justify-content: space-between;
+  }
+
+  .extra-product-item-proops--ident {
+    margin-left: 0;
+  }
 }
 
 .extra-product-item__btn {
@@ -86,10 +181,19 @@
   background-color: @basic-green;
 }
 
+.extra-product-item__btn:hover {
+  background-color: #5eaa2f;
+}
+
+.extra-product-item__btn:focus {
+  background-color: #5eaa2f;
+  color: #8ec36d;
+}
+
 @media (min-width: @tablet-width) {
   .extra-product-item__btn {
     width: 632px;
-    padding: 7px;
+    padding: 10px;
   }
 }
 
@@ -103,6 +207,8 @@
   text-align: center;
   width: 280px;
   height: 289px;
+  margin-top: 40px;
+  margin-bottom: 35px;
   background: url("../img/gift-photo-mobile\ 1.jpg") no-repeat;
 }
 
@@ -110,6 +216,9 @@
   .main__promo {
     width: 708px;
     height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 69px auto 76px;
     background: url("../img/gift-photo-tablet\ 1.png") no-repeat;
   }
 }
@@ -119,6 +228,8 @@
     text-align: center;
     width: 245px;
     height: 289px;
+    display: block;
+    margin: 0;
     background: url("../img/gift-photo-mobile\ 1.jpg") no-repeat;
   }
 }
@@ -130,6 +241,13 @@
 @media (min-width: @tablet-width) {
   .promo__img {
     padding: 0;
+    width: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__img {
+    padding: 55px 0 46px;
   }
 }
 
@@ -142,4 +260,20 @@
   color: @white;
   margin: 0;
   padding: 0 61px 0 58px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__text {
+    width: 161px;
+    text-align: start;
+    padding: 71px 0 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__text {
+    width: 161px;
+    text-align: center;
+    padding: 0 40px 0 43px;
+  }
 }

@@ -6,14 +6,10 @@
 @special_white-2: #f2f2f2;
 @special_grey: #cdcdcd;
 
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
 
 .example {
-  background-color: @gray;
+  background-color: #eaeaea;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,6 +49,7 @@
 @media (min-width: @desktop-width) {
   .example-module {
     max-width: 1440px;
+    margin-right: 35px;
   }
 }
 
@@ -66,7 +63,8 @@
 @media (min-width: @desktop-width) {
   .example-cards {
     padding: 0;
-    margin: 146px 0 75px 110px;
+    margin: 146px 0 75px 0;
+    width: 436px;
   }
 }
 
@@ -102,7 +100,7 @@
   font-size: 36px;
   line-height: 40px;
   color: @black;
-  padding: 27px 0 33px;
+  padding: 27px 0 36px;
   margin: 0;
 }
 
@@ -117,7 +115,7 @@
 @media (min-width: @desktop-width) {
   .example__title {
     padding: 0;
-    margin: 59px 0 63px 110px;
+    margin: 59px 0 63px 0;
   }
 }
 
@@ -135,11 +133,17 @@
 
 .example-description-cards {
   display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .example-description-cards {
+    width: 366px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example-description-cards {
-    justify-content: space-between;
     margin-right: 65px;
   }
 }
@@ -148,18 +152,12 @@
   width: 124px;
   position: relative;
   margin: 0;
-  border: 1px solid @special_grey;
-  border-radius: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .card {
     width: 162px;
   }
-}
-
-.card-weight {
-  margin-right: 31px;
 }
 
 .card__title {
@@ -171,6 +169,8 @@
   color: @black;
   text-align: center;
   padding: 14px;
+  border: 1px solid @special_grey;
+  border-radius: 5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -178,6 +178,7 @@
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 5px;
+    padding: 15px 15px 20px;
   }
 }
 
@@ -192,8 +193,8 @@
   line-height: 12px;
   color: @special_dark-grey;
   text-align: center;
-  margin: 0 25px;
-  background-color: @gray;
+  margin: 3px 24px;
+  background-color: #eaeaea;
 }
 
 @media (min-width: @tablet-width) {
@@ -217,21 +218,21 @@
 @media (min-width: @tablet-width) {
   .card__text--time {
     width: 140px;
-    margin: 0 12px;
+    margin: 2px 12px;
   }
 }
 
 .example-description-cost {
   display: flex;
-  margin: 25px 0 42px 0;
-  padding: 0 39px;
+  margin: 35px 0 30px 0;
+  padding: 0 39px 0 46px;
 }
 
 @media (min-width: @tablet-width) {
   .example-description-cost {
     display: block;
     padding: 0;
-    margin: 0 0 0 160px;
+    margin: 0 0 0 156px;
     padding-top: 11px;
   }
 }
@@ -286,7 +287,7 @@
 
 @media (min-width: @tablet-width) {
   .example__cat {
-    background: linear-gradient(to bottom, @white 30%, @gray 30%);
+    background: linear-gradient(to bottom, @white 30%, #eaeaea 30%);
   }
 }
 
@@ -363,5 +364,14 @@
   .example-slider-btn {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted #b8b8b8;
+
+    &:hover {
+      border-bottom: 1px solid #919191;
+    }
+
+    &:focus {
+      border: none;
+    }
   }
 }

@@ -81,5 +81,3 @@ function updateBackround(value) {
   compasion.parentNode.style.setProperty("--back-divide", value);
 }
 
-
-Resources

@@ -2,25 +2,22 @@
 @white: #ffffff;
 @black: #000000;
 
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
 
 .form__wrapper {
-  padding: 0 20px;
+  max-width: 280px;
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .form__wrapper {
-    padding: 0 30px;
+    max-width: 630px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form__wrapper {
-    padding: 0 110px;
+    max-width: 1220px;
   }
 }
 
@@ -31,6 +28,21 @@
   font-size: 36px;
   line-height: 36px;
   color: @black;
+  margin: 27px 0 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page__heading-title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 65px 0 53px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page__heading-title {
+    margin: 73px 0 56px;
+  }
 }
 
 .form-page__heading-text {
@@ -39,7 +51,17 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
   color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page__heading-text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin-bottom: 66px;
+  }
 }
 
 @media (min-width: @desktop-width) {

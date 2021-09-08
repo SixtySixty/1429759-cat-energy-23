@@ -3,17 +3,7 @@
 @black: #000000;
 @basic-green: #68b738;
 
-//fonts
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
-
-@media (min-width: @desktop-width) {
-  .banner {
-    height: 640px;
-  }
-}
-
 .banner-background {
   background: rgba(104, 183, 56, 0.85);
   opacity: 85%;
@@ -141,7 +131,7 @@
 }
 
 .banner-picture__img {
-  padding: 0 20px 38px;
+  padding: 0 20px 43px;
 }
 
 @media (min-width: @tablet-width) {
@@ -152,14 +142,14 @@
 
 @media (min-width: @desktop-width) {
   .banner-picture__img {
-    position: absolute;
-    left: -160px;
+    margin-bottom: 151px;
+    margin-left: -160px;
   }
 }
 
 .banner__button {
   height: 40px;
-  padding: 7px 69px;
+  width: 280px;
   background-color: @basic-green;
   color: @white;
   font-family: "Oswald", sans-serif;
@@ -173,6 +163,15 @@
   position: absolute;
   bottom: 0;
   margin: 0 20px;
+  padding: 0;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    color: #8ec36d;
+  }
 }
 
 @media (min-width: @tablet-width) {

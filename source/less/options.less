@@ -6,9 +6,13 @@
 
 //fonts
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
+
+@media (min-width: @tablet-width) {
+  .options {
+    position: relative;
+  }
+}
 
 .options__title {
   font-family: "Oswald", sans-serif;
@@ -17,6 +21,15 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
+  margin: 22px 0 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .options__title {
+    margin: 65px 0 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .options-list {
@@ -28,6 +41,14 @@
   .options-list {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    padding-right: 63px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options-list {
+    padding-right: 24px;
   }
 }
 
@@ -39,23 +60,73 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid @special_grey;
+    margin-right: 18px;
+
+    .options__input:checked + & {
+      background: url("../img/check-sign.svg") no-repeat center;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .options__label::before {
+    width: 40px;
+    height: 40px;
+
+    .options__input:checked + & {
+      background: url("../img/tick.svg") no-repeat center;
+    }
+  }
+}
+
+.options__label:nth-child(8) {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .options__label:nth-child(6) {
+    margin: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .options__label {
-    width: 221px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .options__label-ident {
-    margin-right: 123px;
+    width: 231px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .options__label-ident {
+  .options__label {
     margin: 0;
+  }
+}
+
+.options__input {
+  display: none;
+}
+
+.options-btn__wrapper {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .options-btn__wrapper {
+    text-align: start;
   }
 }
 
@@ -72,6 +143,26 @@
   text-transform: uppercase;
   color: @white;
   border: 0;
+  margin: 34px 0 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .options__btn {
+    font-size: 20px;
+    line-height: 0px;
+    padding: 13px 43px;
+    width: 282px;
+    height: 52px;
+    margin: 54px 0 72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options__btn {
+    width: 568px;
+    height: 52px;
+    margin: 61px 0 82px;
+  }
 }
 
 .options__text {
@@ -81,11 +172,19 @@
   font-size: 14px;
   line-height: 16px;
   color: @black;
-  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .options__text {
+    margin: 0 0 0 50px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .options__text {
-    display: inline-block;
+    top: 200px;
+    left: 660px;
+    height: 16px;
+    margin-left: 70px;
   }
 }

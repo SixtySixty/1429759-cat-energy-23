@@ -11,7 +11,7 @@
 <body class="body">
   <header class="header">
     <nav class="main-nav main-nav--closed main-nav-wrapper">
-      <div class="main-nav__user">
+      <div class="main-nav__user main-nav__user--form">
         <a class="main-nav__logo">
           <picture>
             <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)">
@@ -26,14 +26,20 @@
         </button>
       </div>
       <ul class="main-nav__list main-nav__list--closed navigation-list">
+        <li class="navigation-list__item item-ident">
+          <a href="index.html" class="navigation-list-item__link navigation-list-item__link--catalog">
+            Главная
+          </a>
+        </li>
         <li class="navigation-list__item item-ident navigation-list__item--active">
-          <a class="navigation-list-item__link--active">Главная</a>
+          <a class="navigation-list-item__link--active-catalog navigation-list-item__link--catalog">Каталог
+            продукции
+          </a>
         </li>
         <li class="navigation-list__item item-ident">
-          <a href="catalog.html" class="navigation-list__item__link">Каталог продукции</a>
-        </li>
-        <li class="navigation-list__item item-ident">
-          <a href="form.html" class="navigation-list__item__link">Подбор программы</a>
+          <a href="form.html" class="navigation-list-item__link navigation-list-item__link--catalog">
+            Подбор программы
+          </a>
         </li>
       </ul>
     </nav>
@@ -45,11 +51,11 @@
       </h1>
       <h2 class="visually-hidden">Основные товары</h2>
       <ul class="catalog-page__product-list product-list">
-        <li class="product-list__item">
+        <li class="product-list__item product-list-item--ident">
           <div class="product-item">
             <picture>
               <source srcset="img/catalog-1-desktop1-tablet.png" media="(min-width: 768px)">
-              <img class="product-item__img--tiny-first" src="img/catalog-1-desktop1.png"
+              <img class="product-item__img-1" src="img/catalog-1-desktop1.png"
                 alt="изображение продукта cat energy pro 500 г">
             </picture>
             <div class="product-item__info product-item-info">
@@ -60,21 +66,25 @@
               <dl class="product-item-info__props">
                 <dt class="prop">Масса</dt>
                 <dd class="prop-feature">500 г</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Вкус</dt>
                 <dd class="prop-feature">Курица</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Цена</dt>
                 <dd class="prop-feature">700 р.</dd>
               </dl>
             </div>
           </div>
-          <a href="#" class="product-item__link">заказать</a>
+          <button class="product-item__link">заказать</button>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list-item--ident-desktop">
           <div class="product-item">
             <picture>
               <source srcset="img/catalog-2-desktop1-desktop.png" media="(min-width: 1200px)">
               <source srcset="img/catalog-2-desktop1-tablet.png" media="(min-width: 768px)">
-              <img class="product-item__img--big" src="img/catalog-2-desktop1.png"
+              <img class="product-item__img-2" src="img/catalog-2-desktop1.png"
                 alt="изображение продукта cat energy pro 1000 г">
             </picture>
             <div class="product-item__info product-item-info">
@@ -85,20 +95,24 @@
               <dl class="product-item-info__props">
                 <dt class="prop">Масса</dt>
                 <dd class="prop-feature">1000 г</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Вкус</dt>
                 <dd class="prop-feature">Курица</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Цена</dt>
                 <dd class="prop-feature">1000 р.</dd>
               </dl>
             </div>
           </div>
-          <a href="#" class="product-item__link">заказать</a>
+          <button class="product-item__link">заказать</button>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list-item--ident ">
           <div class="product-item">
             <picture>
               <source srcset="img/catalog-3-desktop-tablet.png" media="(min-width: 768px)">
-              <img class="product-item__img--tiny" src="img/catalog-3-desktop.png"
+              <img class="product-item__img-3" src="img/catalog-3-desktop.png"
                 alt="изображение продукта cat energy pro 500 г">
             </picture>
             <div class="product-item__info product-item-info">
@@ -109,21 +123,25 @@
               <dl class="product-item-info__props">
                 <dt class="prop">Масса</dt>
                 <dd class="prop-feature">500 г</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Вкус</dt>
                 <dd class="prop-feature">Рыба</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Цена</dt>
                 <dd class="prop-feature">700 р.</dd>
               </dl>
             </div>
           </div>
-          <a href="#" class="product-item__link">заказать</a>
+          <button class="product-item__link">заказать</button>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list-item--ident-desktop">
           <div class="product-item">
             <picture>
               <source srcset="img/catalog-4-desktop1-desktop.png" media="(min-width: 1200px)">
               <source srcset="img/catalog-4-desktop1-tablet.png" media="(min-width: 768px)">
-              <img class="product-item__img--big" src="img/catalog-4-desktop1.png"
+              <img class="product-item__img-4" src="img/catalog-4-desktop1.png"
                 alt="изображение продукта cat energy pro 1000 г">
             </picture>
             <div class="product-item__info product-item-info">
@@ -134,100 +152,127 @@
               <dl class="product-item-info__props">
                 <dt class="prop">Масса</dt>
                 <dd class="prop-feature">1000 г</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Вкус</dt>
                 <dd class="prop-feature">Рыба</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Цена</dt>
                 <dd class="prop-feature">1000 р.</dd>
               </dl>
             </div>
           </div>
-          <a href="#" class="product-item__link">заказать</a>
+          <button class="product-item__link">заказать</button>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list-item--ident">
           <div class="product-item">
             <picture>
               <source srcset="img/catalog-5-desktop-tablet.png" media="(min-width: 768px)">
-              <img class="product-item__img--tiny" src="img/catalog-5-desktop.png"
+              <img class="product-item__img-5" src="img/catalog-5-desktop.png"
                 alt="изображение продукта cat energy pro 500 г">
             </picture>
             <div class="product-item__info product-item-info">
               <h3 class="product-item-info__title">
                 <span class="product-item-info-title--ident">Cat energy</span>
-                <span>pro 500 г</span>
+                <span>slim 500 г</span>
               </h3>
               <dl class="product-item-info__props">
                 <dt class="prop">Масса</dt>
                 <dd class="prop-feature">500 г</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Вкус</dt>
                 <dd class="prop-feature">Гречка</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Цена</dt>
                 <dd class="prop-feature">400 р.</dd>
               </dl>
             </div>
           </div>
-          <a href="#" class="product-item__link">заказать</a>
+          <button class="product-item__link">заказать</button>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list-item--ident-desktop">
           <div class="product-item">
             <picture>
               <source srcset="img/catalog-6-desktop-desktop.png" media="(min-width: 1200px)">
               <source srcset="img/catalog-6-desktop-tablet.png" media="(min-width: 768px)">
-              <img class="product-item__img--big" src="img/catalog-6-desktop.png"
+              <img class="product-item__img-6" src="img/catalog-6-desktop.png"
                 alt="изображение продукта cat energy pro 1000 г">
             </picture>
             <div class="product-item__info product-item-info">
               <h3 class="product-item-info__title">
                 <span class="product-item-info-title--ident">Cat energy</span>
-                <span>pro 1000 г</span>
+                <span>slim 1000 г</span>
               </h3>
               <dl class="product-item-info__props">
                 <dt class="prop">Масса</dt>
                 <dd class="prop-feature">1000 г</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Вкус</dt>
                 <dd class="prop-feature">Гречка</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Цена</dt>
                 <dd class="prop-feature">700 р.</dd>
               </dl>
             </div>
           </div>
-          <a href="#" class="product-item__link">заказать</a>
+          <button class="product-item__link">заказать</button>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list-item--ident">
           <div class="product-item">
             <picture>
               <source srcset="img/catalog-7-desktop-tablet.png" media="(min-width: 768px)">
-              <img class="product-item__img--tiny" src="img/catalog-7-desktop.png"
+              <img class="product-item__img-7" src="img/catalog-7-desktop.png"
                 alt="изображение продукта cat energy pro 500 г">
             </picture>
             <div class="product-item__info product-item-info">
               <h3 class="product-item-info__title">
                 <span class="product-item-info-title--ident">Cat energy</span>
-                <span>pro 500 г</span>
+                <span>slim 500 г</span>
               </h3>
               <dl class="product-item-info__props">
                 <dt class="prop">Масса</dt>
                 <dd class="prop-feature">500 г</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Вкус</dt>
                 <dd class="prop-feature">Рис</dd>
+              </dl>
+              <dl class="product-item-info__props">
                 <dt class="prop">Цена</dt>
-                <dd class="prop-feature">700 р.</dd>
+                <dd class="prop-feature">500 р.</dd>
               </dl>
             </div>
           </div>
-          <a href="#" class="product-item__link">заказать</a>
+          <button class="product-item__link">заказать</button>
         </li>
         <li class="product-list__item product-list__item--show-more">
-          <img class="product-item__img--show-more" src="img/plus.svg" alt="плюсик">
+          <picture>
+            <source srcset="img/plus-tablet.svg" media="(min-width: 768px)">
+            <img class="product-item__img--show-more" src="img/plus.svg" alt="плюсик">
+          </picture>
           <div class="product-item__info product-item-info">
             <h3 class="product-item-info__title product-item-info__title--show-more">
               Показать еще 100500 товаров
             </h3>
             <p class="product-item__text">На самом деле вкусов гораздо больше!</p>
           </div>
-          <a href="#" class="product-item__link--show-more">показать все</a>
+          <button class="product-item__link--show-more">показать все</button>
         </li>
       </ul>
-      <h2 class="main__heading-secondary">Дополнительные товары</h2>
+    </div>
+    <h2 class="main__heading-secondary heading">
+      <div class="form__wrapper">
+        <span class="heading__content">
+          Дополнительные товары
+        </span>
+      </div>
+    </h2>
+    <div class="catalog__wrapper">
       <div class="main__extra-product">
         <ul class="main__extra-product-list extra-product-list">
           <li class="extra-product-list__item">
@@ -235,7 +280,7 @@
               <h3 class="extra-product-item__title">Сахарозаменитель</h3>
               <dl class="extra-product-item__props">
                 <dt>1 упаковка (100 г)</dt>
-                <dd>200 р.</dd>
+                <dd class="extra-product-item-proops--ident">200 р.</dd>
               </dl>
             </div>
             <button class="extra-product-item__btn">Заказать</button>
@@ -245,7 +290,7 @@
               <h3 class="extra-product-item__title">Питьевая вода</h3>
               <dl class="extra-product-item__props">
                 <dt>5 литров</dt>
-                <dd>50 р.</dd>
+                <dd class="extra-product-item-proops--ident">50 р.</dd>
               </dl>
             </div>
             <button class="extra-product-item__btn">Заказать</button>
@@ -255,7 +300,7 @@
               <h3 class="extra-product-item__title">Молоко</h3>
               <dl class="extra-product-item__props">
                 <dt>1 литр</dt>
-                <dd>100 р.</dd>
+                <dd class="extra-product-item-proops--ident">100 р.</dd>
               </dl>
             </div>
             <button class="extra-product-item__btn">Заказать</button>
@@ -265,7 +310,7 @@
               <h3 class="extra-product-item__title">Витамины</h3>
               <dl class="extra-product-item__props">
                 <dt>1 упаковка (30 г)</dt>
-                <dd>300 р.</dd>
+                <dd class="extra-product-item-proops--ident">300 р.</dd>
               </dl>
             </div>
             <button class="extra-product-item__btn">Заказать</button>
@@ -285,24 +330,13 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="map">
-        <div class="location location-tablet">
-          <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
-          <div class="location-address">
-            <p class="location-address__text location-address__text--street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="location-address__text location-address__text--city">Санкт-Петербург</p>
-          </div>
-        </div>
-        <div class="location location-desktop">
-          <span class="location__text">
-            приглашаем к сотрудничеству дилеров!
-          </span>
-          <div class="location-address">
-            <p class="location-address__text">
-              ул. Большая Конюшенная, д. 19/8
-            </p>
-            <p class="location-address__text location-address__text--ident">
-              Санкт-Петербург
-            </p>
+        <div class="location-background">
+          <div class="location location-wrapper">
+            <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
+            <div class="location-address">
+              <p class="location-address__text location-address__text--street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="location-address__text location-address__text--city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <picture class="map__picture">

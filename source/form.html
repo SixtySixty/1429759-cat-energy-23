@@ -26,14 +26,21 @@
         </button>
       </div>
       <ul class="main-nav__list main-nav__list--closed navigation-list">
+        <li class="navigation-list__item item-ident">
+          <a href="index.html" class="navigation-list-item__link navigation-list-item__link--catalog">
+            Главная
+          </a>
+        </li>
         <li class="navigation-list__item item-ident navigation-list__item--active">
-          <a class="navigation-list-item__link--active">Главная</a>
+          <a href="catalog.html" class="navigation-list-item__link--catalog">Каталог
+            продукции
+          </a>
         </li>
         <li class="navigation-list__item item-ident">
-          <a href="catalog.html" class="navigation-list__item__link">Каталог продукции</a>
-        </li>
-        <li class="navigation-list__item item-ident">
-          <a href="form.html" class="navigation-list__item__link">Подбор программы</a>
+          <a
+            class="navigation-list-item__link navigation-list-item__link--catalog navigation-list-item__link--active-catalog ">
+            Подбор программы
+          </a>
         </li>
       </ul>
     </nav>
@@ -45,98 +52,114 @@
         Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
-      <form class="main__form" action="https://echo.htmlacademy.ru" method="post">
+    </div>
+    <form class="main__form" action="https://echo.htmlacademy.ru" method="post">
 
-        <div class="information">
-          <div class="information__info info">
-            <label class="info__label" for="name">ИМЯ:*</label>
-            <input class="info__input" id="name" name="name" type="text" placeholder="барсик">
-            <label class="info__label" for="weight">Вес (кг):*</label>
-            <input class="info__input" id="weight" name="weight" type="text" placeholder="7">
-            <label class="info__label" for="age">Возраст (лет):</label>
-            <input class="info__input" id="age" name="age" type="text" placeholder="7">
-          </div>
-          <div class="information__select select">
-            <label class="select__label" for="loseWeight">
-              <input class="select__input" id="loseWeight" name="question-select" type="radio" checked>
-              похудение
-            </label>
-            <label class="select__label" for="gainWeight">
-              <input class="select__input" id="gainWeight" name="question-select" type="radio">
-              Набор массы
-            </label>
-            <label class="select__label" for="unknow">
-              <input class="select__input" id="unknow" name="question-select" type="radio">
-              Не знаю (Нужен ваш совет)
-            </label>
-          </div>
+      <div class="information form__wrapper">
+        <div class="information__info info">
+          <label class="info__label" for="name">ИМЯ:*</label>
+          <input class="info__input info__input-1" id="name" name="name" type="text" placeholder="барсик">
+          <label class="info__label" for="weight">Вес (кг):*</label>
+          <input class="info__input info__input-2" id="weight" name="weight" type="text" placeholder="7">
+          <label class="info__label" for="age">Возраст (лет):</label>
+          <input class="info__input info__input-3" id="age" name="age" type="text" placeholder="7">
         </div>
+        <div class="information__select select">
+          <input class="select__input" id="loseWeight" name="question-select" type="radio" checked>
+          <label class="select__label" for="loseWeight">
+            похудение
+          </label>
 
-        <div class="contact">
-          <h2 class="contact__title">Контактные данные (владельца кота)</h2>
-          <div class="contact-list">
-            <label class="contact-list__label contact__label" for="email">E-mail:*</label>
-            <input class="contact-list__label contact__input" type="email" id="email" name="email"
+          <input class="select__input" id="gainWeight" name="question-select" type="radio">
+          <label class="select__label" for="gainWeight">
+            Набор массы
+          </label>
+
+          <input class="select__input" id="unknow" name="question-select" type="radio">
+          <label class="select__label" for="unknow">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2 class="contact__title heading">
+          <div class="form__wrapper">
+            <span class="heading__content">Контактные данные </span>
+            <span class="heading__content">(владельца кота)</span>
+          </div>
+        </h2>
+        <div class="contact-list form__wrapper">
+          <div>
+            <label class="contact-list__label contact__label contact__label-1" for="email">E-mail:*</label>
+            <input class="contact-list__label contact__input contact__input-1" type="email" id="email" name="email"
               placeholder="kuklachev@gmail.com">
-            <label class="contact-list__label contact__label" for="phone">Телефон:*</label>
-            <input class="contact-list__label contact__input" type="tel" id="phone" name="phone"
+          </div>
+          <div>
+            <label class="contact-list__label contact__label contact__label-2" for="phone">Телефон:*</label>
+            <input class="contact-list__label contact__input contact__input-2" type="tel" id="phone" name="phone"
               placeholder="8 (960) 900-60-90">
           </div>
         </div>
-        <div class="comment">
-          <h2 class="comment__title">Комментарий</h2>
-          <textarea class="comment__textarea" name="\">
-          </textarea>
+      </div>
+      <div class="comment">
+        <h2 class="comment__title heading">
+          <div class="form__wrapper">
+            <span class="heading__content">Комментарий</span>
+          </div>
+        </h2>
+        <div class="form__wrapper">
+          <textarea class="comment__textarea" name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
         </div>
-        <div class="options">
-          <h2 class="options__title">Дополнительно</h2>
+      </div>
+      <div class="options">
+        <h2 class="options__title heading">
+          <div class="form__wrapper">
+            <span class="heading__content">Дополнительно</span>
+          </div>
+        </h2>
+        <div class="form__wrapper">
           <div class="options-list">
-            <label class="options__label options__label-ident" for="sugar">
-              <input class="options__input" id="sugar" name="sugar" type="checkbox" checked>
+            <input class="options__input" id="sugar" name="sugar" type="checkbox" checked>
+            <label class="options__label" for="sugar">
               сахарозаменитель
             </label>
+
+            <input class="options__input" id="water" name="water" type="checkbox">
             <label class="options__label" for="water">
-              <input class="options__input" id="water" name="water" type="checkbox">
               питьевая вода
             </label>
+
+            <input class="options__input" id="milk" name="milk" type="checkbox">
             <label class="options__label options__label-ident" for="milk">
-              <input class="options__input" id="milk" name="milk" type="checkbox">
               молоко
             </label>
+
+            <input class="options__input" id="vitamins" name="vitamins" type="checkbox">
             <label class="options__label" for="vitamins">
-              <input class="options__input" id="vitamins" name="vitamins" type="checkbox">
               витамины
             </label>
           </div>
-          <button class="options__btn" type="submit">
-            отправить заявку
-          </button>
-          <p class="options__text">* — Обязательные поля</p>
+          <div class="options-btn__wrapper">
+            <button class="options__btn" type="submit">
+              отправить заявку
+            </button>
+            <span class="options__text">* — Обязательные поля</span>
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="map">
-        <div class="location location-tablet">
-          <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
-          <div class="location-address">
-            <p class="location-address__text location-address__text--street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="location-address__text location-address__text--city">Санкт-Петербург</p>
-          </div>
-        </div>
-        <div class="location location-desktop">
-          <span class="location__text">
-            приглашаем к сотрудничеству дилеров!
-          </span>
-          <div class="location-address">
-            <p class="location-address__text">
-              ул. Большая Конюшенная, д. 19/8
-            </p>
-            <p class="location-address__text location-address__text--ident">
-              Санкт-Петербург
-            </p>
+        <div class="location-wrapper">
+          <div class="location location--catalog">
+            <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
+            <div class="location-address">
+              <p class="location-address__text location-address__text--street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="location-address__text location-address__text--city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <picture class="map__picture">
@@ -145,6 +168,8 @@
           <img class="map__img" src="img/map__img.jpg" alt="Карта">
         </picture>
       </div>
+
+
       <div class="contacts">
         <img class="contacts__logo" src="img/footer__logo-img__title.svg" alt="Cat energy">
         <div class="contacts__social social">

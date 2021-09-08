@@ -3,10 +3,6 @@
 @special_white: #d9d9d9;
 @black: #111111;
 
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
 
 .social {
@@ -41,9 +37,18 @@
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
-  color: @black;
   line-height: 20px;
   text-transform: uppercase;
+  color: #666666;
+
+  .social-item-link__img:hover {
+    color: #68b738;
+  }
+
+  .social-item-link__img:focus {
+    color: #68b738;
+    opacity: 0.3;
+  }
 }
 
 .social-item__link--vkontakte {
