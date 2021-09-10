@@ -23,18 +23,9 @@
   background-color: @special-grey;
 }
 
-.location-wrapper {
-  max-width: 320px;
-  margin: auto;
-}
-
 @media (min-width: @tablet-width) {
   .location {
     padding: 66px 71px 58px;
-  }
-
-  .location-wrapper {
-    max-width: 768px;
   }
 }
 
@@ -158,4 +149,30 @@
 
 .map__img {
   width: 100%;
+}
+
+.map-widget {
+  height: 362px;
+  margin-bottom: -4px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .location-address-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

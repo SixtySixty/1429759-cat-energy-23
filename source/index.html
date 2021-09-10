@@ -184,19 +184,24 @@
     <div class="footer__wrapper">
       <div class="map">
         <div class="location-wrapper">
-          <div class="location location--catalog">
-            <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
-            <div class="location-address">
-              <p class="location-address__text location-address__text--street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="location-address__text location-address__text--city">Санкт-Петербург</p>
+          <div class="location-address-wrapper">
+            <div class="location location--catalog">
+              <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
+              <div class="location-address">
+                <p class="location-address__text location-address__text--street">ул. Большая Конюшенная, д. 19/8</p>
+                <p class="location-address__text location-address__text--city">Санкт-Петербург</p>
+              </div>
             </div>
           </div>
         </div>
-        <picture class="map__picture">
+        <iframe class="map-widget"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac948352635ef835438d75c452dbbac3cedfc55c9a467317f09b9df079cd42922&amp;source=constructor"
+          width="100%" height="400" frameborder="0"></iframe>
+        <!-- <picture class="map__picture">
           <source srcset="img/location-desktop.jpg" media="(min-width: 1200px)">
           <source srcset="img/location-tablet.jpg" media="(min-width: 768px)">
           <img class="map__img" src="img/map__img.jpg" alt="Карта">
-        </picture>
+        </picture> -->
       </div>
       <div class="contacts">
         <img class="contacts__logo" src="img/footer__logo-img__title.svg" alt="Cat energy">
