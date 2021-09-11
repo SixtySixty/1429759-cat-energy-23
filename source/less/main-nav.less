@@ -3,10 +3,6 @@
 @black: #000000;
 @basic-green: #68b738;
 
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
 
 .header {
@@ -15,7 +11,8 @@
 
 .main-nav--closed .main-nav__toggle {
   padding: 0;
-  margin-top: 14px;
+  margin-top: 13px;
+  margin-left: 5px;
   border: 0;
   background: url("../img/navigation-button_mobile--open.svg") no-repeat @white;
   width: 24px;
@@ -27,7 +24,7 @@
 .main-nav--opened .main-nav__toggle {
   background: none;
   position: relative;
-  margin: 0;
+  margin: 0 0 0 5px;
   padding: 0;
   border: 0;
   width: 24px;
@@ -86,6 +83,10 @@
   justify-content: space-between;
 }
 
+.main-nav__user--form {
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .main-nav--opened .main-nav__user {
   border-bottom: 1px solid #e6e6e6;
 }
@@ -105,8 +106,20 @@
   }
 }
 
+.main-nav__logo {
+  height: 37px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
 .main-nav__title-img {
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
@@ -157,6 +170,10 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+.navigation-list__item--active {
+  pointer-events: none;
+}
+
 @media (min-width: @tablet-width) {
   .navigation-list__item {
     font-size: 18px;
@@ -164,6 +181,14 @@
     margin-right: 35px;
     border: 0;
     padding: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -171,12 +196,13 @@
   .navigation-list__item {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 17px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .item-ident:nth-child(3) {
-    margin: 0;
+    margin-right: 0;
   }
 }
 
@@ -191,6 +217,11 @@
   }
 }
 
+.navigation-list-item__link--catalog {
+  color: @black;
+  text-decoration: none;
+}
+
 @media (min-width: @tablet-width) {
   .navigation-list-item__link--active {
     padding-bottom: 10px;
@@ -203,6 +234,20 @@
     padding-bottom: 8px;
     border-bottom: 2px solid @white;
     color: @white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .navigation-list-item__link--active-catalog {
+    border-bottom: 2px solid @basic-green;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation-list-item__link--active-catalog {
+    color: @black;
+    padding-bottom: 8px;
   }
 }
 

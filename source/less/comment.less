@@ -4,10 +4,6 @@
 @special_dark-grey: #444444;
 @special_light-gray: #e7e7e7;
 
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
 
 .comment__title {
@@ -17,6 +13,15 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
+  margin: 23px 0 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 65px 0 76px;
+  }
 }
 
 .comment__textarea {
@@ -29,5 +34,22 @@
   color: @special_dark-grey;
   border: 1px solid @special_light-gray;
   box-sizing: border-box;
-  padding: 9px 15px;
+  padding: 9px 12px 9px 15px;
+  resize: none;
+  width: 280px;
+  height: 150px;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__textarea {
+    padding: 10px 19px;
+    width: 631px;
+    height: 174px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__textarea {
+    width: 1220px;
+  }
 }

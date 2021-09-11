@@ -5,10 +5,6 @@
 @basic_white: #d9d9d9;
 @special_dark-grey: #444444;
 
-//fonts
-
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-
 //code
 
 .tips__wrapper {
@@ -189,12 +185,25 @@
   color: #000000;
   background: url("../img/tip-footer__link-img__arrow.svg") no-repeat;
   text-decoration: none;
-  padding: 15px 107px 18px 0;
+  padding: 19px 107px 18px 0;
   display: block;
-  background-position-x: 121px;
-  background-position-y: 17px;
+  background-position-x: 102px;
+  background-position-y: 21px;
   border-top: 1px solid #d9d9d9;
   margin: 0 20px;
+
+  &:hover {
+    background: url("../img/tip-footer__link-img__arrow2.svg") no-repeat;
+    background-position-x: 128px;
+    background-position-y: 10px;
+  }
+
+  &:focus {
+    background: url("../img/tip-footer__link-img__arrow2.svg") no-repeat;
+    background-position-x: 128px;
+    background-position-y: 10px;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
