@@ -12,7 +12,7 @@
   <header class="header">
     <nav class="main-nav main-nav--closed main-nav-wrapper">
       <div class="main-nav__user">
-        <a class="main-nav__logo">
+        <a href="index.html" class="main-nav__logo">
           <picture>
             <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)">
             <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
@@ -26,19 +26,18 @@
         </button>
       </div>
       <ul class="main-nav__list main-nav__list--closed navigation-list">
-        <li class="navigation-list__item item-ident">
+        <li class="navigation-list__item item-ident navigation-list-item">
           <a href="index.html" class="navigation-list-item__link navigation-list-item__link--catalog">
             Главная
           </a>
         </li>
-        <li class="navigation-list__item item-ident">
-          <a href="catalog.html" class="navigation-list-item__link--catalog">Каталог
+        <li class="navigation-list__item item-ident navigation-list-item">
+          <a href="catalog.html" class="navigation-list-item__link navigation-list-item__link--catalog">Каталог
             продукции
           </a>
         </li>
-        <li class="navigation-list__item item-ident">
-          <a
-            class="navigation-list-item__link navigation-list-item__link--catalog navigation-list-item__link--active-catalog ">
+        <li class="navigation-list__item item-ident navigation-list-item">
+          <a class="navigation-list-item__link--active-catalog navigation-list-item__link--catalog">
             Подбор программы
           </a>
         </li>
@@ -84,10 +83,10 @@
 
       <div class="contact">
         <h2 class="contact__title heading">
-          <div class="form__wrapper">
+          <span class="form__wrapper">
             <span class="heading__content">Контактные данные </span>
             <span class="heading__content">(владельца кота)</span>
-          </div>
+          </span>
         </h2>
         <div class="contact-list form__wrapper">
           <div>
@@ -104,9 +103,9 @@
       </div>
       <div class="comment">
         <h2 class="comment__title heading">
-          <div class="form__wrapper">
+          <span class="form__wrapper">
             <span class="heading__content">Комментарий</span>
-          </div>
+          </span>
         </h2>
         <div class="form__wrapper">
           <textarea class="comment__textarea" name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
@@ -114,9 +113,9 @@
       </div>
       <div class="options">
         <h2 class="options__title heading">
-          <div class="form__wrapper">
+          <span class="form__wrapper">
             <span class="heading__content">Дополнительно</span>
-          </div>
+          </span>
         </h2>
         <div class="form__wrapper">
           <div class="options-list">
@@ -166,7 +165,7 @@
         </div>
         <iframe class="map-widget"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac948352635ef835438d75c452dbbac3cedfc55c9a467317f09b9df079cd42922&amp;source=constructor"
-          width="100%" height="400" frameborder="0"></iframe>
+          height="400"></iframe>
         <!-- <picture class="map__picture">
           <source srcset="img/location-desktop.jpg" media="(min-width: 1200px)">
           <source srcset="img/location-tablet.jpg" media="(min-width: 768px)">
@@ -178,8 +177,9 @@
         <div class="contacts__social social">
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-item__link social-item__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social-item-link__img social-item-link__img--vkontakte" viewBox="0 0 23 16" fill="none"
+              <a class="social-item__link social-item-link social-item__link--vkontakte"
+                href="https://vk.com/htmlacademy">
+                <svg class=" social-item-link__img social-item-link__img--vkontakte" viewBox="0 0 23 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <title>Мы в
                     Вконтакте</title>
@@ -189,7 +189,8 @@
                 </svg></a>
             </li>
             <li class="social-item">
-              <a class="social-item__link social-item__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <a class="social-item__link social-item-link social-item__link--instagram"
+                href="https://www.instagram.com/htmlacademy">
                 <svg class="social-item-link__img social-item-link__img--instagram" viewBox="0 0 16 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <title>Мы в
@@ -201,7 +202,8 @@
               </a>
             </li>
             <li class="social-item">
-              <a class="social-item__link social-item__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <a class="social-item__link social-item-link social-item__link--facebook"
+                href="https://www.facebook.com/htmlacademy">
                 <svg class="social-item-link__img social-item-link__img--facebook" viewBox="0 0 22 22" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <title>Мы в
@@ -236,5 +238,4 @@
     </div>
   </footer>
 </body>
-
 </html>
