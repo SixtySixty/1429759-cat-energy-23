@@ -149,7 +149,7 @@
     margin-bottom: 25px;
   }
 
-  .extra-product-item-proops--ident {
+  .extra-product-item-proops-ident {
     margin-left: 50px;
   }
 }
@@ -163,12 +163,12 @@
     justify-content: space-between;
   }
 
-  .extra-product-item-proops--ident {
+  .extra-product-item-proops-ident {
     margin-left: 0;
   }
 }
 
-.extra-product-item__btn {
+.extra-product-item-btn {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -181,24 +181,24 @@
   background-color: @basic-green;
 }
 
-.extra-product-item__btn:hover {
+.extra-product-item-btn:hover {
   background-color: #5eaa2f;
 }
 
-.extra-product-item__btn:focus {
+.extra-product-item-btn:focus {
   background-color: #5eaa2f;
   color: #8ec36d;
 }
 
 @media (min-width: @tablet-width) {
-  .extra-product-item__btn {
+  .extra-product-item-btn {
     width: 632px;
     padding: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .extra-product-item__btn {
+  .extra-product-item-btn {
     width: 244px;
   }
 }
@@ -209,7 +209,13 @@
   height: 289px;
   margin-top: 40px;
   margin-bottom: 35px;
-  background: url("../img/gift-photo-mobile\ 1.jpg") no-repeat;
+  background: url("../img/gift-photo-mobile.jpg") no-repeat;
+}
+
+@media @retina {
+  .main__promo {
+    background: url("../img/gift-photo-mobile@2.jpg") no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -219,7 +225,13 @@
     display: flex;
     justify-content: space-around;
     margin: 69px auto 76px;
-    background: url("../img/gift-photo-tablet\ 1.png") no-repeat;
+    background: url("../img/gift-photo-tablet.png") no-repeat;
+  }
+
+  @media @retina {
+    .main__promo {
+      background: url("../gift-photo-tablet@2.png") no-repeat;
+    }
   }
 }
 
@@ -230,7 +242,13 @@
     height: 289px;
     display: block;
     margin: 0;
-    background: url("../img/gift-photo-mobile\ 1.jpg") no-repeat;
+    background: url("../img/gift-photo-mobile.jpg") no-repeat;
+  }
+
+  @media @retina {
+    .main__promo {
+      background: url("../img/gift-photo-mobile@2.jpg") no-repeat;
+    }
   }
 }
 

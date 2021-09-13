@@ -6,7 +6,6 @@
 //code
 .banner-background {
   background: rgba(104, 183, 56, 0.85);
-  opacity: 85%;
   width: 320px;
   height: 302px;
   position: absolute;
@@ -28,10 +27,16 @@
     display: block;
     background: url("../img/index-background-desktop1.jpg") no-repeat;
   }
+
+  @media @retina {
+    .banner-background {
+      background: url("../img/index-background-desktop@2.jpg") no-repeat;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .banner-background--color {
+  .banner-color {
     background-color: @basic-green;
     z-index: 1;
     height: 682px;
@@ -46,6 +51,12 @@
   z-index: 2;
   max-width: 320px;
   margin: auto;
+}
+
+@media @retina {
+  .banner__wrapper {
+    background: url("../img/index-background-mobile@2.jpg") no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {

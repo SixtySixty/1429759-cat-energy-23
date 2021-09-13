@@ -29,27 +29,22 @@
         <button class="main-nav__toggle" type="button">
         </button>
       </div>
-      <ul class="main-nav__list main-nav__list--closed navigation-list">
-        <li class="navigation-list__item item-ident navigation-list-item">
-          <a href="index.html" class="navigation-list-item__link navigation-list-item__link--catalog">
-            Главная
-          </a>
+      <ul class="main-nav-list main-nav-list--closed navigation-list">
+        <li class="navigation-list-item navigation-list-item">
+          <a href="index.html" class="navigation-list-item-link-page">Главная</a>
         </li>
-        <li class="navigation-list__item item-ident navigation-list-item">
-          <a href="catalog.html" class="navigation-list-item__link navigation-list-item__link--catalog">Каталог
-            продукции
-          </a>
+        <li class="navigation-list-item navigation-list-item">
+          <a href="catalog.html" class="navigation-list-item-link-page">Каталог
+            продукции</a>
         </li>
-        <li class="navigation-list__item item-ident navigation-list-item">
-          <a class="navigation-list-item__link--active-catalog navigation-list-item__link--catalog">
-            Подбор программы
-          </a>
+        <li class="navigation-list-item navigation-list-item">
+          <a class="navigation-list-item-link-active-page">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main form-page">
-    <div class="form__wrapper">
+    <div class="form-wrapper">
       <h1 class="form-page__heading-title">Подбор программы</h1>
       <p class="form-page__heading-text">
         Заполните анкету, и мы подберем
@@ -58,7 +53,7 @@
     </div>
     <form class="main__form" action="https://echo.htmlacademy.ru" method="post">
 
-      <div class="information form__wrapper">
+      <div class="information form-wrapper">
         <div class="information__info info">
           <label class="info__label" for="name">ИМЯ:*</label>
           <input class="info__input info__input-1" id="name" name="name" type="text" placeholder="барсик">
@@ -87,12 +82,12 @@
 
       <div class="contact">
         <h2 class="contact__title heading">
-          <span class="form__wrapper">
+          <span class="form-wrapper">
             <span class="heading__content">Контактные данные </span>
             <span class="heading__content">(владельца кота)</span>
           </span>
         </h2>
-        <div class="contact-list form__wrapper">
+        <div class="contact-list form-wrapper">
           <div>
             <label class="contact-list__label contact__label contact__label-1" for="email">E-mail:*</label>
             <input class="contact-list__label contact__input contact__input-1" type="email" id="email" name="email"
@@ -107,21 +102,21 @@
       </div>
       <div class="comment">
         <h2 class="comment__title heading">
-          <span class="form__wrapper">
+          <span class="form-wrapper">
             <span class="heading__content">Комментарий</span>
           </span>
         </h2>
-        <div class="form__wrapper">
+        <div class="form-wrapper">
           <textarea class="comment__textarea" name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
       <div class="options">
         <h2 class="options__title heading">
-          <span class="form__wrapper">
+          <span class="form-wrapper">
             <span class="heading__content">Дополнительно</span>
           </span>
         </h2>
-        <div class="form__wrapper">
+        <div class="form-wrapper">
           <div class="options-list">
             <input class="options__input" id="sugar" name="sugar" type="checkbox" checked>
             <label class="options__label" for="sugar">
@@ -143,7 +138,7 @@
               витамины
             </label>
           </div>
-          <div class="options-btn__wrapper">
+          <div class="options-btn-wrapper">
             <button class="options__btn" type="submit">
               отправить заявку
             </button>

@@ -72,8 +72,9 @@
 
 @media (min-width: @desktop-width) {
   .main-nav-wrapper {
-    width: auto;
-    padding: 41px 110px 21px;
+    margin: 0 auto;
+    padding: 41px 0 29px;
+    min-width: 1200px;
     height: 59px;
   }
 }
@@ -158,7 +159,7 @@
   }
 }
 
-.navigation-list__item {
+.navigation-list-item {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -170,30 +171,18 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
-.navigation-list__item--active {
-  pointer-events: none;
-}
-
 @media (min-width: @tablet-width) {
-  .navigation-list__item {
+  .navigation-list-item {
     font-size: 18px;
     line-height: 24px;
     margin-right: 35px;
     border: 0;
     padding: 0;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:focus {
-      opacity: 0.3;
-    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list__item {
+  .navigation-list-item {
     font-size: 20px;
     line-height: 30px;
     margin-top: 17px;
@@ -201,57 +190,55 @@
 }
 
 @media (min-width: @tablet-width) {
-  .item-ident:nth-child(3) {
+  .navigation-list-item:nth-child(3) {
     margin-right: 0;
   }
 }
 
-.navigation-list__item__link {
+.navigation-list-item-link {
   text-decoration: none;
   color: @black;
-}
 
-@media (min-width: @desktop-width) {
-  .navigation-list__item__link {
-    color: @white;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }
 
-.navigation-list-item__link--catalog {
-  color: @black;
-  text-decoration: none;
+@media (min-width: @desktop-width) {
+  .navigation-list-item-link {
+    text-decoration: none;
+    color: @white;
+  }
+
+  .navigation-list-item-link-page {
+    color: @black;
+    text-decoration: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .navigation-list-item__link--active {
+  .navigation-list-item-link-active {
     padding-bottom: 10px;
     border-bottom: 2px solid @basic-green;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list-item__link--active {
+  .navigation-list-item-link-active {
     padding-bottom: 8px;
-    border-bottom: 2px solid @white;
+    pointer-events: none;
     color: @white;
+    border-bottom: 2px solid @white;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .navigation-list-item__link--active-catalog {
+  .navigation-list-item-link-active-page {
     border-bottom: 2px solid @basic-green;
-    padding-bottom: 10px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .navigation-list-item__link--active-catalog {
     color: @black;
     padding-bottom: 8px;
+    pointer-events: none;
   }
-}
-
-@media (min-width: @desktop-width) {
-  padding-bottom: 8px;
-  border-bottom: 2px solid @white;
 }
