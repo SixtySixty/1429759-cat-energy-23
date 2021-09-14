@@ -29,7 +29,7 @@
   .example__wrapper {
     display: flex;
     margin: auto;
-    max-width: 1220px;
+    width: 1200px;
     margin-top: 11px;
   }
 }
@@ -42,14 +42,12 @@
 @media (min-width: @tablet-width) {
   .example-module {
     max-width: 768px;
-    margin: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example-module {
-    max-width: 1440px;
-    margin-right: 135px;
+    margin: 0;
   }
 }
 
@@ -293,7 +291,9 @@
 
 @media (min-width: @desktop-width) {
   .example__cat {
+    width: 690px;
     background: none;
+    margin-left: auto;
   }
 }
 

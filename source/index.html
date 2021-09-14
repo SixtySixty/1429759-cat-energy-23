@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,22 +29,22 @@
         <button class="main-nav__toggle" type="button">
         </button>
       </div>
-      <ul class="main-nav__list main-nav__list--closed navigation-list">
-        <li class="navigation-list__item item-ident navigation-list__item--active">
-          <a class="navigation-list-item__link--active">Главная</a>
+      <ul class="main-nav-list main-nav-list--closed navigation-list">
+        <li class="navigation-list-item">
+          <a class="navigation-list-item-link navigation-list-item-link-active">Главная</a>
         </li>
-        <li class="navigation-list__item item-ident">
-          <a href="catalog.html" class="navigation-list__item__link">Каталог продукции</a>
+        <li class="navigation-list-item">
+          <a href="catalog.html" class="navigation-list-item-link">Каталог
+            продукции</a>
         </li>
-        <li class="navigation-list__item item-ident">
-          <a href="form.html" class="navigation-list__item__link">Подбор программы</a>
+        <li class="navigation-list-item">
+          <a href="form.html" class="navigation-list-item-link">Подбор программы</a>
         </li>
       </ul>
     </nav>
     <div class="banner">
       <div class="banner__wrapper">
         <div class="banner-background">
-          <div class="banner-background--color"></div>
         </div>
         <div class="banner-discription">
           <h1 class="banner__title">Функциональное питание для котов</h1>
@@ -48,9 +52,10 @@
           <button class="banner__button" type="button">подобрать программу</button>
         </div>
         <picture class="banner__picture banner-picture">
-          <source srcset="img/index-can.png" media="(min-width: 1200px)">
-          <source srcset="img/index-can-tablet.png" media="(min-width: 768px)">
-          <img class="banner-picture__img" src="img/index-can-mobile1.png" alt="cat energy food">
+          <source srcset="img/index-can.png, img/index-can@2.png 2x" media="(min-width: 1200px)">
+          <source srcset="img/index-can-tablet.png, img/index-can-tablet@2.png 2x" media="(min-width: 768px)">
+          <img class="banner-picture__img" src="img/index-can-mobile1.png" srcset="img/index-can-mobile@2.png 2x"
+            alt="cat energy food">
         </picture>
       </div>
     </div>
@@ -134,25 +139,24 @@
         <div class="example__cat example-cat">
           <div class="example-cat__wrapper">
             <article class="comparison">
+              <h2 class="visually-hidden">Слайдер</h2>
               <ul class="comparison__slides">
                 <li class="comparison__slide" id="before">
-                  <img class="comparison__image" src="img/cat-fat.png">
+                  <img class="comparison__image" src="img/cat-fat.png" srcset="img/cat-fat@2.png" alt="пухлый котик">
                 </li>
                 <li class="comparison__slide" id="after">
-                  <img class="comparison__image" src="img/cat-skinny.png">
+                  <img class="comparison__image" srcset="img/cat-skinny@2.png" src="img/cat-skinny.png"
+                    alt="худенький котик">
                 </li>
               </ul>
               <form class="comparison__controls">
                 <fieldset class="comparison__range-wrapper">
-                  <legend class="visually-hidden">
-                    Choose which picture to show
-                  </legend>
                   <a class="comparison__control" href="#before">
-                    <button class="example-slider-btn">было</button>
+                    <span class="example-slider-btn">было</span>
                   </a>
                   <input class="comparison__range range" type="range" min="0" max="100" value="50" hidden="hidden" />
                   <a class="comparison__control comparison__control--right" href="#after">
-                    <button class="example-slider-btn">стало</button>
+                    <span class="example-slider-btn">стало</span>
                   </a>
                 </fieldset>
                 <fieldset class="switcher comparison__switcher" role="radiogroup" hidden="hidden">
@@ -160,7 +164,7 @@
                     Comparison switcher
                   </legend>
                   <label class="comparison__control comparison__control--before" for="before-radio">
-                    <button class="example-slider-btn">было</button>
+                    <span class="example-slider-btn">было</span>
                   </label>
                   <div class="switcher__wrapper">
                     <input class="switcher__radio" id="before-radio" type="radio" name="comparison-switcher"
@@ -170,7 +174,7 @@
                     <span class="switcher__thumb" aria-hidden="true"></span>
                   </div>
                   <label class="comparison__control comparison__control--after" for="after-radio">
-                    <button class="example-slider-btn">стало</button>
+                    <span class="example-slider-btn">стало</span>
                   </label>
                 </fieldset>
               </form>
@@ -196,7 +200,7 @@
         </div>
         <iframe class="map-widget"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac948352635ef835438d75c452dbbac3cedfc55c9a467317f09b9df079cd42922&amp;source=constructor"
-          width="100%" height="400" frameborder="0"></iframe>
+          height="400"></iframe>
         <!-- <picture class="map__picture">
           <source srcset="img/location-desktop.jpg" media="(min-width: 1200px)">
           <source srcset="img/location-tablet.jpg" media="(min-width: 768px)">
@@ -208,8 +212,9 @@
         <div class="contacts__social social">
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-item__link social-item__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social-item-link__img social-item-link__img--vkontakte" viewBox="0 0 23 16" fill="none"
+              <a class="social-item__link social-item-link social-item__link--vkontakte"
+                href="https://vk.com/htmlacademy">
+                <svg class=" social-item-link__img social-item-link__img--vkontakte" viewBox="0 0 23 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <title>Мы в
                     Вконтакте</title>
@@ -219,7 +224,8 @@
                 </svg></a>
             </li>
             <li class="social-item">
-              <a class="social-item__link social-item__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <a class="social-item__link social-item-link social-item__link--instagram"
+                href="https://www.instagram.com/htmlacademy">
                 <svg class="social-item-link__img social-item-link__img--instagram" viewBox="0 0 16 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <title>Мы в
@@ -231,7 +237,8 @@
               </a>
             </li>
             <li class="social-item">
-              <a class="social-item__link social-item__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <a class="social-item__link social-item-link social-item__link--facebook"
+                href="https://www.facebook.com/htmlacademy">
                 <svg class="social-item-link__img social-item-link__img--facebook" viewBox="0 0 22 22" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <title>Мы в
@@ -265,7 +272,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
-<script src="js/index.js"></script>
 
 </html>
