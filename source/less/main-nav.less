@@ -208,15 +208,23 @@
   }
 }
 
+.navigation-list-item-link-page {
+  color: @black;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .navigation-list-item-link {
     text-decoration: none;
     color: @white;
-  }
-
-  .navigation-list-item-link-page {
-    color: @black;
-    text-decoration: none;
   }
 }
 
@@ -224,6 +232,13 @@
   .navigation-list-item-link-active {
     padding-bottom: 10px;
     border-bottom: 2px solid @basic-green;
+  }
+
+  .navigation-list-item-link-active-page {
+    border-bottom: 2px solid @basic-green;
+    color: @black;
+    padding-bottom: 8px;
+    pointer-events: none;
   }
 }
 
@@ -233,12 +248,5 @@
     pointer-events: none;
     color: @white;
     border-bottom: 2px solid @white;
-  }
-
-  .navigation-list-item-link-active-page {
-    border-bottom: 2px solid @basic-green;
-    color: @black;
-    padding-bottom: 8px;
-    pointer-events: none;
   }
 }
