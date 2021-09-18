@@ -1,18 +1,16 @@
-//colors
-@white: #ffffff;
-@black: #000000;
-@special_dark-grey: #444444;
-@special_light-gray: #e7e7e7;
+@import url("colors.less");
 
 //code
 
 .info {
   margin: 39px 0 21px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .info {
     margin: 0 0 72px;
+    padding: 0;
   }
 }
 
@@ -23,6 +21,22 @@
   }
 }
 
+.info-line {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .info-line {
+    margin-bottom: 18px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .info__label {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -30,7 +44,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: @special_dark-grey;
+  color: @basic-dark-grey-1;
 }
 
 @media (min-width: @tablet-width) {
@@ -47,23 +61,27 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: @special_dark-grey;
-  border: 1px solid @special_light-gray;
+  color: @basic-dark-grey-1;
+  border: 1px solid @basic-grey-2;
   box-sizing: border-box;
   padding: 13px 16px;
-  margin-bottom: 13px;
+  flex-grow: 1;
 }
 
 .info__input:hover {
-  border-color: #cdcdcd;
+  border-color: @basic-grey-4;
 }
 
 .info__input:focus {
-  outline: 2px solid #444444;
+  outline: 2px solid @basic-dark-grey-1;
 }
 
 .info__input:focus-visible {
-  outline: 2px solid #444444;
+  outline: 2px solid @basic-dark-grey-1;
+}
+
+.info__input:target {
+  outline: 2px solid @basic-coral;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,7 +89,6 @@
     font-size: 20px;
     line-height: 30px;
     padding: 10px 18px 11px;
-    margin-bottom: 20px;
   }
 }
 
@@ -82,34 +99,31 @@
 }
 
 .info__input-1 {
-  width: 228px;
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
 .info__input-2 {
-  width: 204px;
-  margin-left: 12px;
+  margin-left: 17px;
 }
 
 .info__input-3 {
-  width: 170px;
-  margin: 0 0 0 12px;
+  margin-left: 14px;
 }
 
 @media (min-width: @tablet-width) {
   .info__input-1 {
     width: 567px;
-    margin-left: 11px;
+    margin-left: 16px;
   }
 
   .info__input-2 {
-    width: 536px;
-    margin-left: 15px;
+    width: 533px;
+    margin-left: 20px;
   }
 
   .info__input-3 {
-    width: 497px;
-    margin-left: 12px;
+    width: 493px;
+    margin-left: 18px;
   }
 }
 
@@ -126,6 +140,5 @@
 
   .info__input-3 {
     width: 426px;
-    margin-left: 22px;
   }
 }

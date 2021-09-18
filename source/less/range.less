@@ -1,3 +1,5 @@
+@import url("colors.less");
+
 .range::-webkit-slider-runnable-track,
 .range::-webkit-slider-thumb,
 .range {
@@ -6,7 +8,7 @@
   background-image: linear-gradient(
     to bottom,
     transparent 14px,
-    #dcdcdc 14px 20px,
+    @basic-grey-9 14px 20px,
     transparent 20px
   );
   /* stylelint-disable property-no-vendor-prefix */
@@ -16,7 +18,11 @@
 .range::-webkit-slider-thumb {
   width: 34px;
   height: 34px;
-  background: radial-gradient(circle at center, #68b738 4px, #ffffff 4px);
+  background: radial-gradient(
+    circle at center,
+    @basic-green-1 4px,
+    @basic-white 4px
+  );
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 50%;
@@ -27,7 +33,11 @@
 .range::-moz-range-thum {
   width: 34px;
   height: 34px;
-  background: radial-gradient(circle at center, #68b738 4px, #ffffff 4px);
+  background: radial-gradient(
+    circle at center,
+    @basic-green-1 4px,
+    @basic-white 4px
+  );
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 50%;

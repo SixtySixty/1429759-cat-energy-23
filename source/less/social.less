@@ -1,14 +1,11 @@
-//colors
-@white: #ffffff;
-@special_white: #d9d9d9;
-@black: #111111;
+@import url("colors.less");
 
 //code
 
 .social {
-  padding: 20px 77px 21px 73px;
-  border-top: 1px solid @special_white;
-  border-bottom: 1px solid @special_white;
+  padding: 20px 77px 16px 73px;
+  border-top: 1px solid @basic-gray-1;
+  border-bottom: 1px solid @basic-gray-1;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,7 +25,13 @@
 
 @media (min-width: @tablet-width) {
   .social-list {
-    margin: 0;
+    margin-left: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social-list {
+    margin-left: 26px;
   }
 }
 
@@ -39,14 +42,14 @@
   text-decoration: none;
   line-height: 20px;
   text-transform: uppercase;
-  color: #666666;
+  color: @basic-dark-grey-2;
 
   .social-item-link__img:hover {
-    color: #68b738;
+    color: @basic-green-1;
   }
 
   .social-item-link__img:focus {
-    color: #68b738;
+    color: @basic-green-1;
     opacity: 0.3;
   }
 }
@@ -90,17 +93,17 @@
   .social-item-link__img--vkontakte {
     width: 30px;
     height: 22px;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .social-item-link__img--instagram {
     width: 23px;
     height: 23px;
-    margin-top: 5px;
+    margin-top: 3px;
   }
 
   .social-item-link__img--facebook {
     width: 28px;
-    height: 33px;
+    height: 28px;
   }
 }

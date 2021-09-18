@@ -1,8 +1,4 @@
-//colors
-@white: #ffffff;
-@black: #111111;
-@special_dark-grey: #444444;
-@special-grey: #f2f2f2;
+@import url("colors.less");
 
 //code
 
@@ -19,19 +15,15 @@
   padding: 0 20px;
 }
 
-.location-background {
-  background-color: @special-grey;
-}
-
 @media (min-width: @tablet-width) {
   .location {
-    padding: 66px 71px 58px;
+    padding: 64px 72px 50px 71px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .location {
-    background-color: @white;
+    background-color: @basic-white;
     width: 570px;
     height: 201px;
     padding: 0;
@@ -43,12 +35,12 @@
 }
 
 .location--catalog {
-  background-color: #f2f2f2;
+  background-color: @basic-grey-3;
 }
 
 @media (min-width: @desktop-width) {
   .location--catalog {
-    background-color: @white;
+    background-color: @basic-white;
   }
 }
 
@@ -65,7 +57,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: @black;
+  color: @basic-black-1;
   padding: 28px 2px 26px 0;
   width: 140px;
 }
@@ -73,8 +65,9 @@
 @media (min-width: @tablet-width) {
   .location__text {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
     padding: 0;
+    margin-top: 2px;
     width: 171px;
     height: 83px;
   }
@@ -82,8 +75,12 @@
 
 @media (min-width: @desktop-width) {
   .location__text {
-    padding: 66px;
+    padding: 59px 0 51px 76px;
   }
+}
+
+.location-text-start {
+  display: block;
 }
 
 .location-address {
@@ -92,7 +89,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: @special_dark-grey;
+  color: @basic-dark-grey-1;
   padding: 28px 0 26px;
   width: 140px;
 }
@@ -110,7 +107,7 @@
 
 @media (min-width: @desktop-width) {
   .location-address {
-    padding: 66px;
+    padding: 58px 73px 59px 87px;
     text-align: start;
     width: 180px;
   }
@@ -118,6 +115,10 @@
 
 .location-address__text {
   margin: 0;
+}
+
+.promo-text-start {
+  display: block;
 }
 
 @media (min-width: @desktop-width) {

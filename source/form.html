@@ -44,23 +44,33 @@
     </nav>
   </header>
   <main class="main form-page">
-    <div class="form-wrapper">
+    <div class="form-wrapper form-heading">
       <h1 class="form-page__heading-title">Подбор программы</h1>
-      <p class="form-page__heading-text">
-        Заполните анкету, и мы подберем
-        программу питания для вашего кота
+      <p class="form-page__heading-subtitle">
+        <span class="heading-text">
+          Заполните анкету, и мы подберем
+        </span>
+        <span class="heading-text">
+          программу питания для вашего кота
+        </span>
       </p>
     </div>
     <form class="main__form" action="https://echo.htmlacademy.ru" method="post">
 
       <div class="information form-wrapper">
         <div class="information__info info">
-          <label class="info__label" for="name">ИМЯ:*</label>
-          <input class="info__input info__input-1" id="name" name="name" type="text" placeholder="барсик">
-          <label class="info__label" for="weight">Вес (кг):*</label>
-          <input class="info__input info__input-2" id="weight" name="weight" type="text" placeholder="7">
-          <label class="info__label" for="age">Возраст (лет):</label>
-          <input class="info__input info__input-3" id="age" name="age" type="text" placeholder="7">
+          <div class="info-line">
+            <label class="info__label" for="name">ИМЯ:*</label>
+            <input class="info__input info__input-1" id="name" name="name" type="text" placeholder="барсик">
+          </div>
+          <div class="info-line">
+            <label class="info__label" for="weight">Вес (кг):*</label>
+            <input class="info__input info__input-2" id="weight" name="weight" type="text" placeholder="7">
+          </div>
+          <div class="info-line">
+            <label class="info__label" for="age">Возраст (лет):</label>
+            <input class="info__input info__input-3" id="age" name="age" type="text" placeholder="7">
+          </div>
         </div>
         <div class="information__select select">
           <input class="select__input" id="loseWeight" name="question-select" type="radio" checked>
@@ -82,18 +92,18 @@
 
       <div class="contact">
         <h2 class="contact__title heading">
-          <span class="form-wrapper">
+          <span class="heading-wrapper">
             <span class="heading__content">Контактные данные </span>
             <span class="heading__content">(владельца кота)</span>
           </span>
         </h2>
         <div class="contact-list form-wrapper">
-          <div>
+          <div class="contact-list-1">
             <label class="contact-list__label contact__label contact__label-1" for="email">E-mail:*</label>
             <input class="contact-list__label contact__input contact__input-1" type="email" id="email" name="email"
               placeholder="kuklachev@gmail.com">
           </div>
-          <div>
+          <div class="contact-list-2">
             <label class="contact-list__label contact__label contact__label-2" for="phone">Телефон:*</label>
             <input class="contact-list__label contact__input contact__input-2" type="tel" id="phone" name="phone"
               placeholder="8 (960) 900-60-90">
@@ -102,21 +112,21 @@
       </div>
       <div class="comment">
         <h2 class="comment__title heading">
-          <span class="form-wrapper">
+          <span class="heading-wrapper">
             <span class="heading__content">Комментарий</span>
           </span>
         </h2>
-        <div class="form-wrapper">
+        <div class="form-wrapper comment-wrapper">
           <textarea class="comment__textarea" name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
       <div class="options">
         <h2 class="options__title heading">
-          <span class="form-wrapper">
+          <span class="heading-wrapper">
             <span class="heading__content">Дополнительно</span>
           </span>
         </h2>
-        <div class="form-wrapper">
+        <div class="form-wrapper options-wrapper">
           <div class="options-list">
             <input class="options__input" id="sugar" name="sugar" type="checkbox" checked>
             <label class="options__label" for="sugar">
