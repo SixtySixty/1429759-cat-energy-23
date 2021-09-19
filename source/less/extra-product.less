@@ -1,10 +1,4 @@
-@white: #ffffff;
-@black: #000000;
-@special-dark-grey: #444444;
-@special_dark-grey-2: #222222;
-@basic-green: #68b738;
-@special-gray: #cdcdcd;
-@basic_grey: #f2f2f2;
+@import url("colors.less");
 
 //code
 
@@ -14,9 +8,9 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: @black;
+  color: @basic-black-1;
   margin: 25px 0 36px;
-  background-color: @white;
+  background-color: @basic-white;
 }
 
 @media (min-width: @tablet-width) {
@@ -49,8 +43,8 @@
 
 @media (min-width: @tablet-width) {
   .extra-product-list {
-    border-right: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid @basic-grey-4;
+    border-left: 1px solid @basic-grey-4;
     max-width: 708px;
     margin: auto;
   }
@@ -65,17 +59,17 @@
 }
 
 .extra-product-list__item {
-  padding: 13px 20px 19px;
-  border-top: 1px solid @special-gray;
+  padding: 13px 20px 18px;
+  border-top: 1px solid @basic-grey-4;
 }
 
 .extra-product-list__item:nth-child(4) {
-  border-bottom: 1px solid @special-gray;
+  border-bottom: 1px solid @basic-grey-4;
 }
 
 @media (min-width: @tablet-width) {
   .extra-product-list__item {
-    padding: 26px 38px 28px;
+    padding: 26px 38px;
   }
 }
 
@@ -100,6 +94,7 @@
     justify-content: space-between;
     width: 650px;
     margin-right: 38px;
+    margin-left: 2px;
   }
 }
 
@@ -110,8 +105,8 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: @special_dark-grey-2;
-  margin: 0;
+  color: @basic-light-black;
+  margin-left: 1px;
 }
 
 @media (min-width: @tablet-width) {
@@ -137,7 +132,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  color: @special-dark-grey;
+  color: @basic-dark-grey-1;
   margin: 13px 0 15px;
 }
 
@@ -158,8 +153,8 @@
   .extra-product-item__props {
     font-size: 16px;
     line-height: 20px;
-    margin: auto 0;
-    width: 280px;
+    margin: 14px 1px 0 0;
+    width: 287px;
     justify-content: space-between;
   }
 
@@ -178,17 +173,17 @@
   width: 100%;
   border: 0;
   text-transform: uppercase;
-  color: @white;
-  background-color: @basic-green;
+  color: @basic-white;
+  background-color: @basic-green-1;
 }
 
 .extra-product-item-btn:hover {
-  background-color: #5eaa2f;
+  background-color: @basic-green-2;
 }
 
 .extra-product-item-btn:focus {
-  background-color: #5eaa2f;
-  color: #8ec36d;
+  background-color: @basic-green-2;
+  color: @basic-green-3;
 }
 
 @media (min-width: @tablet-width) {
@@ -200,7 +195,7 @@
 
 @media (min-width: @desktop-width) {
   .extra-product-item-btn {
-    width: 244px;
+    width: 257px;
   }
 }
 
@@ -209,7 +204,7 @@
   width: 280px;
   height: 289px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 34px;
   margin-bottom: 35px;
   background: url("../img/gift-photo-mobile.jpg") no-repeat;
 
@@ -280,7 +275,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: @white;
+  color: @basic-white;
   margin: 0;
   padding: 0 61px 0 58px;
 }

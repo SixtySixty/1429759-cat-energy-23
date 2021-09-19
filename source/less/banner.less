@@ -1,7 +1,4 @@
-//colors
-@white: #ffffff;
-@black: #000000;
-@basic-green: #68b738;
+@import url("colors.less");
 
 //code
 .banner-background {
@@ -38,7 +35,7 @@
 @media (min-width: @desktop-width) {
   .banner-background {
     width: 50%;
-    height: 682px;
+    height: 680px;
     right: 0;
     top: 0;
     display: block;
@@ -97,7 +94,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: @white;
+  color: @basic-white;
   margin: 0;
   text-align: center;
   padding: 27px 0 25px;
@@ -105,17 +102,17 @@
 
 @media (min-width: @tablet-width) {
   .banner__title {
-    color: @black;
+    color: @basic-black-1;
     text-align: start;
     font-size: 60px;
     line-height: 60px;
-    padding: 62px 88px 41px;
+    padding: 65px 87px 41px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .banner__title {
-    padding: 110px 80px 40px;
+    padding: 81px 80px 40px;
   }
 }
 
@@ -126,7 +123,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: @white;
+  color: @basic-white;
   margin: 0;
   text-align: center;
   padding-bottom: 29px;
@@ -134,11 +131,11 @@
 
 @media (min-width: @tablet-width) {
   .banner__subtitle {
-    color: @black;
+    color: @basic-black-1;
     text-align: start;
     font-size: 20px;
     line-height: 20px;
-    padding: 0 90px 20px;
+    padding: 0 89px 20px;
   }
 }
 
@@ -159,21 +156,22 @@
 @media (min-width: @tablet-width) {
   .banner-picture__img {
     padding: 0;
+    margin-left: -1px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .banner-picture__img {
-    margin-bottom: 151px;
-    margin-left: -160px;
+    margin-bottom: 148px;
+    margin-left: -162px;
   }
 }
 
 .banner__button {
   height: 40px;
   width: 280px;
-  background-color: @basic-green;
-  color: @white;
+  background-color: @basic-green-1;
+  color: @basic-white;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -188,17 +186,18 @@
   padding: 0;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: @basic-green-2;
   }
 
   &:focus {
-    color: #8ec36d;
+    color: @basic-green-3;
   }
 }
 
 @media (min-width: @tablet-width) {
   .banner__button {
     top: 295px;
+    width: 245px;
     margin: 0;
     height: 54px;
     font-size: 20px;
@@ -210,7 +209,7 @@
 
 @media (min-width: @desktop-width) {
   .banner__button {
-    top: 466px;
+    top: 442px;
     margin-left: 80px;
     padding: 14px 26px;
   }

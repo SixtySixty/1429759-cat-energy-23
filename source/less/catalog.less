@@ -1,7 +1,4 @@
-//colors
-@white: #ffffff;
-@black: #000000;
-@gray: #d9d9d9;
+@import url("colors.less");
 
 //code
 
@@ -27,16 +24,23 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: @black;
+  color: @basic-black-1;
   margin: 0;
-  padding: 27px 20px 41px;
+  padding: 27px 21px 40px;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-page__heading-main {
     font-size: 60px;
     line-height: 60px;
-    padding: 64px 0 82px;
+    padding: 65px 0 90px;
     margin-left: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-page__heading-main {
+    padding: 46px 0 90px;
+    margin-left: 40px;
   }
 }
