@@ -1,28 +1,28 @@
-@import url("colors.less");
+@import url("../colors.less");
 
 //code
 
 @media (min-width: @desktop-width) {
-  .map {
+  .location {
     position: relative;
     height: 400px;
   }
 }
 
-.location {
+.location-block {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
-  .location {
+  .location-block {
     padding: 64px 72px 50px 71px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .location {
+  .location-block {
     background-color: @basic-white;
     width: 570px;
     height: 201px;
@@ -34,12 +34,12 @@
   }
 }
 
-.location--catalog {
+.location--page {
   background-color: @basic-grey-3;
 }
 
 @media (min-width: @desktop-width) {
-  .location--catalog {
+  .location--page {
     background-color: @basic-white;
   }
 }
@@ -51,7 +51,7 @@
 }
 
 .location__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -84,7 +84,7 @@
 }
 
 .location-address {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -133,30 +133,7 @@
   }
 }
 
-.map__picture {
-  display: flex;
-  margin: auto;
-  max-width: 320px;
-}
-
-@media (min-width: @tablet-width) {
-  .map__picture {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .map__picture {
-    max-width: 1440px;
-    height: 400px;
-  }
-}
-
-.map__img {
-  width: 100%;
-}
-
-.map-widget {
+.location-widget {
   height: 362px;
   margin-bottom: -4px;
   width: 100%;

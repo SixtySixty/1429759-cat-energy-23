@@ -1,4 +1,4 @@
-@import url("colors.less");
+@import url("../colors.less");
 
 //code
 
@@ -72,9 +72,13 @@
   .main-nav-wrapper {
     margin: 0 auto;
     padding: 41px 0 29px;
-    min-width: 1220px;
+    min-width: 1200px;
     height: 59px;
   }
+}
+
+@media (min-width: 1225px) {
+  min-width: 1220px;
 }
 
 .main-nav__user {
@@ -127,11 +131,11 @@
   }
 }
 
-.main-nav--closed .navigation-list {
+.main-nav--closed .main-nav-list {
   display: none;
 }
 
-.main-nav--opened .navigation-list {
+.main-nav--opened .main-nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -143,7 +147,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav--closed .navigation-list {
+  .main-nav--closed .main-nav-list {
     display: flex;
     list-style: none;
     margin-bottom: 0;
@@ -153,14 +157,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav--closed .navigation-list {
+  .main-nav--closed .main-nav-list {
     margin-top: 0;
     width: auto;
   }
 }
 
-.navigation-list-item {
-  font-family: "Oswald", sans-serif;
+.main-nav-list-item {
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -172,7 +176,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .navigation-list-item {
+  .main-nav-list-item {
     font-size: 18px;
     line-height: 24px;
     margin-top: 6px;
@@ -198,7 +202,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list-item {
+  .main-nav-list-item {
     font-size: 20px;
     line-height: 30px;
     margin: 3px 0 0;
@@ -220,7 +224,7 @@
   }
 }
 
-.navigation-list-item-link {
+.main-nav-list-item-link {
   text-decoration: none;
   color: @basic-black-1;
 
@@ -233,7 +237,7 @@
   }
 }
 
-.navigation-list-item-link-page {
+.main-nav-list-item-link-page {
   color: @basic-black-1;
   text-decoration: none;
 
@@ -247,19 +251,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list-item-link {
+  .main-nav-list-item-link {
     text-decoration: none;
     color: @basic-white;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .navigation-list-item-link-active {
+  .main-nav-list-item-link-active {
     padding-bottom: 8px;
     border-bottom: 2px solid @basic-green-1;
   }
 
-  .navigation-list-item-link-active-page {
+  .main-nav-list-item-link-active-page {
     border-bottom: 2px solid @basic-green-1;
     color: @basic-black-1;
     padding-bottom: 5px;
@@ -268,7 +272,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list-item-link-active {
+  .main-nav-list-item-link-active {
     padding-bottom: 6px;
     pointer-events: none;
     color: @basic-white;

@@ -1,4 +1,4 @@
-@import url("colors.less");
+@import url("../colors.less");
 
 //code
 
@@ -184,7 +184,7 @@
 }
 
 .product-item-info__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -216,7 +216,11 @@
   }
 }
 
-.product-item-info__title--show-more {
+.product-list-item__title--show-more {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
   color: @basic-black-2;
   margin-top: 53px;
   margin-bottom: 8px;
@@ -224,18 +228,22 @@
 }
 
 @media (min-width: @tablet-width) {
-  .product-item-info__title--show-more {
+  .product-list-item__title--show-more {
     line-height: 22px;
     margin-top: 107px;
     margin-bottom: 23px;
+    font-size: 20px;
+    padding: 0 83px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .product-item-info__title--show-more {
+  .product-list-item__title--show-more {
     line-height: 22px;
     margin-top: 158px;
     margin-bottom: 23px;
+    font-size: 20px;
+    padding: 0 47px;
   }
 }
 
@@ -284,7 +292,7 @@
 }
 
 .product-item-text {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -308,7 +316,7 @@
 }
 
 .product-item-info__props {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -344,24 +352,24 @@
   }
 }
 
-.prop {
+.product-item-info__prop {
   margin-right: 70px;
 }
 
 @media (min-width: @tablet-width) {
-  .prop {
+  .product-item-info__prop {
     margin-right: 0;
     margin-bottom: 7px;
   }
 }
 
-.prop-feature {
+.product-item-info__prop-feature {
   margin: 0;
 }
 
 .product-list-item__link {
   background: @basic-green-1;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -403,7 +411,7 @@
   color: @basic-dark-grey-1;
   height: 40px;
   width: 100%;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
@@ -434,12 +442,3 @@
     margin: 0 38px;
   }
 }
-
-// .product-item__desc {
-//   font-family: "Arial", sans-serif;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 12px;
-//   line-height: 16px;
-//   color: @special_dark-grey;
-// }
