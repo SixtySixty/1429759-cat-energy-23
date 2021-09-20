@@ -9,12 +9,12 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
   <header class="header">
-    <nav class="main-nav main-nav--closed main-nav-wrapper">
+    <nav class="main-nav main-nav--opened main-nav-wrapper">
       <div class="main-nav__user">
         <a href="index.html" class="main-nav__logo">
           <picture>
@@ -29,16 +29,16 @@
         <button class="main-nav__toggle" type="button">
         </button>
       </div>
-      <ul class="main-nav-list main-nav-list--closed navigation-list">
-        <li class="navigation-list-item navigation-list-item">
-          <a href="index.html" class="navigation-list-item-link-page">Главная</a>
+      <ul class="main-nav-list main-nav-list--closed">
+        <li class="main-nav-list-item main-nav-list-item">
+          <a href="index.html" class="main-nav-list-item-link-page">Главная</a>
         </li>
-        <li class="navigation-list-item navigation-list-item">
-          <a href="catalog.html" class="navigation-list-item-link-page">Каталог
+        <li class="main-nav-list-item main-nav-list-item">
+          <a href="catalog.html" class="main-nav-list-item-link-page">Каталог
             продукции</a>
         </li>
-        <li class="navigation-list-item navigation-list-item">
-          <a class="navigation-list-item-link-active-page">Подбор программы</a>
+        <li class="main-nav-list-item main-nav-list-item">
+          <a class="main-nav-list-item-link-active-page">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -47,10 +47,10 @@
     <div class="form-wrapper form-heading">
       <h1 class="form-page__heading-title">Подбор программы</h1>
       <p class="form-page__heading-subtitle">
-        <span class="heading-text">
+        <span class="form-heading-text">
           Заполните анкету, и мы подберем
         </span>
-        <span class="heading-text">
+        <span class="form-heading-text">
           программу питания для вашего кота
         </span>
       </p>
@@ -160,11 +160,14 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="map">
+      <div class="location">
         <div class="location-wrapper">
           <div class="location-address-wrapper">
-            <div class="location location--catalog">
-              <span class="location__text">приглашаем к сотрудничеству дилеров!</span>
+            <div class="location-block location--page">
+              <div class="location__text">
+                <span class="location-text-start">приглашаем</span>
+                <span>к сотрудничеству дилеров!</span>
+              </div>
               <div class="location-address">
                 <p class="location-address__text location-address__text--street">ул. Большая Конюшенная, д. 19/8</p>
                 <p class="location-address__text location-address__text--city">Санкт-Петербург</p>
@@ -172,14 +175,9 @@
             </div>
           </div>
         </div>
-        <iframe class="map-widget"
+        <iframe class="location-widget"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac948352635ef835438d75c452dbbac3cedfc55c9a467317f09b9df079cd42922&amp;source=constructor"
           height="400"></iframe>
-        <!-- <picture class="map__picture">
-          <source srcset="img/location-desktop.jpg" media="(min-width: 1200px)">
-          <source srcset="img/location-tablet.jpg" media="(min-width: 768px)">
-          <img class="map__img" src="img/map__img.jpg" alt="Карта">
-        </picture> -->
       </div>
       <div class="contacts">
         <img class="contacts__logo" src="img/footer__logo-img__title.svg" alt="Cat energy">
@@ -246,7 +244,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/index.js"></script>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>

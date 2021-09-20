@@ -1,4 +1,4 @@
-@import url("colors.less");
+@import url("../colors.less");
 
 //code
 .banner-background {
@@ -35,7 +35,7 @@
 @media (min-width: @desktop-width) {
   .banner-background {
     width: 50%;
-    height: 680px;
+    height: 695px;
     right: 0;
     top: 0;
     display: block;
@@ -45,7 +45,7 @@
         rgba(104, 183, 56, 0.85) 100%
       ),
       url("../img/index-background-desktop1.jpg");
-    background-size: cover;
+    background-size: auto;
 
     @media @retina {
       .banner-background {
@@ -89,7 +89,7 @@
 }
 
 .banner__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -167,9 +167,8 @@
   }
 }
 
-.banner__button {
+.banner__link {
   height: 40px;
-  width: 280px;
   background-color: @basic-green-1;
   color: @basic-white;
   font-family: "Oswald", sans-serif;
@@ -179,11 +178,14 @@
   font-size: 14px;
   line-height: 18px;
   border: 0;
-  display: block;
   position: absolute;
   bottom: 0;
   margin: 0 20px;
-  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 73px;
+  text-decoration: none;
 
   &:hover {
     background-color: @basic-green-2;
@@ -195,23 +197,21 @@
 }
 
 @media (min-width: @tablet-width) {
-  .banner__button {
+  .banner__link {
     top: 295px;
-    width: 245px;
     margin: 0;
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 20px;
+    padding: 0 27px;
     margin-left: 90px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .banner__button {
-    top: 442px;
+  .banner__link {
+    top: 455px;
     margin-left: 80px;
-    padding: 14px 26px;
   }
 }
 

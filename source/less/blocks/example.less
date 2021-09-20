@@ -1,4 +1,4 @@
-@import url("colors.less");
+@import url("../colors.less");
 
 //code
 
@@ -61,7 +61,7 @@
 }
 
 .example-cards__text {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -88,7 +88,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -142,20 +142,20 @@
   }
 }
 
-.card {
+.example-card {
   width: 124px;
   position: relative;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .card {
+  .example-card {
     width: 162px;
   }
 }
 
-.card__title {
-  font-family: "Oswald", sans-serif;
+.example-card__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -168,7 +168,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .card__title {
+  .example-card__title {
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 5px;
@@ -176,8 +176,8 @@
   }
 }
 
-.card__text {
-  font-family: "Arial", sans-serif;
+.example-card__text {
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   width: 77px;
@@ -192,7 +192,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .card__text {
+  .example-card__text {
     font-size: 14px;
     line-height: 14px;
     top: 63px;
@@ -204,32 +204,32 @@
 }
 
 @media (min-width: @desktop-width) {
-  .card__text {
+  .example-card__text {
     background-color: @basic-grey-3;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .card__text--time {
+  .cexample-card__text--time {
     width: 140px;
     margin: 2px 12px;
   }
 }
 
-.card__text--weight {
+.example-card__text--weight {
   margin: 3px 23px;
 }
 
-.card__text--time {
+.example-card__text--time {
   margin: 2px 22px;
 }
 
 @media (min-width: @tablet-width) {
-  .card__text--weight {
+  .example-card__text--weight {
     margin: 0 23px;
   }
 
-  .card__text--time {
+  .example-card__text--time {
     margin: 0 10px;
   }
 }
@@ -258,7 +258,7 @@
 }
 
 .example-cards__cost {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -302,98 +302,5 @@
 @media (min-width: @desktop-width) {
   .example-cards__cost--rubles {
     margin-top: 0;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .example__cat {
-    background: linear-gradient(to bottom, @basic-white 30%, @basic-grey-5 30%);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .example__cat {
-    width: 690px;
-    background: none;
-    margin-left: 134px;
-  }
-}
-
-.example-cat__wrapper {
-  max-width: 320px;
-  margin: auto;
-}
-
-@media (min-width: @tablet-width) {
-  .example-cat__wrapper {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .example-cat__wrapper {
-    padding-top: 5px;
-  }
-}
-
-.visually-hidden-cat-desktop {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .visually-hidden-cat-desktop {
-    display: block;
-    margin: auto;
-  }
-
-  .visually-hidden-cat-mobile {
-    display: none;
-  }
-}
-
-.example-slider-buttons {
-  padding: 27px 47px 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (min-width: @tablet-width) {
-  .example-slider-buttons {
-    padding: 5px 86px 64px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .example-slider-buttons {
-    padding: 16px 33px 64px;
-  }
-}
-
-.example-slider-btn {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: @basic-black-1;
-  text-transform: uppercase;
-  border: 0;
-  padding: 0;
-  background: none;
-}
-
-@media (min-width: @tablet-width) {
-  .example-slider-btn {
-    font-size: 20px;
-    line-height: 30px;
-    border-bottom: 1px dotted @basic-dark-grey-3;
-
-    &:hover {
-      border-bottom: 1px solid @basic-dark-grey-4;
-    }
-
-    &:focus {
-      border: none;
-    }
   }
 }

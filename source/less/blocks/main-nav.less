@@ -1,4 +1,4 @@
-@import url("colors.less");
+@import url("../colors.less");
 
 //code
 
@@ -71,9 +71,15 @@
 @media (min-width: @desktop-width) {
   .main-nav-wrapper {
     margin: 0 auto;
-    padding: 41px 0 29px;
-    min-width: 1220px;
+    padding: 54px 0 29px;
+    min-width: 1200px;
     height: 59px;
+  }
+}
+
+@media (min-width: 1225px) {
+  .main-nav-wrapper {
+    min-width: 1220px;
   }
 }
 
@@ -84,11 +90,13 @@
 }
 
 .main-nav__user--form {
-  border-bottom: 1px solid @basic-gray-1;
+  outline: 1px solid @basic-gray-1;
 }
 
-.main-nav--opened .main-nav__user {
-  border-bottom: 1px solid @basic-grey-6;
+@media (min-width: @tablet-width) {
+  .main-nav__user--form {
+    outline: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -127,23 +135,32 @@
   }
 }
 
-.main-nav--closed .navigation-list {
+.main-nav--closed .main-nav-list {
   display: none;
 }
 
-.main-nav--opened .navigation-list {
+.main-nav--opened .main-nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: absolute;
-  z-index: 3;
   background-color: @basic-white;
   width: 100%;
   display: block;
 }
 
+.main-nav--opened .main-nav-list-js {
+  position: absolute;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    & {
+      position: relative;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
-  .main-nav--closed .navigation-list {
+  .main-nav--closed .main-nav-list {
     display: flex;
     list-style: none;
     margin-bottom: 0;
@@ -153,14 +170,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav--closed .navigation-list {
+  .main-nav--closed .main-nav-list {
     margin-top: 0;
     width: auto;
   }
 }
 
-.navigation-list-item {
-  font-family: "Oswald", sans-serif;
+.main-nav-list-item {
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -169,10 +186,14 @@
   padding: 22px 24px;
   text-align: center;
   border-bottom: 1px solid @basic-grey-6;
+
+  &:nth-child(1) {
+    border-top: 1px solid @basic-grey-6;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .navigation-list-item {
+  .main-nav-list-item {
     font-size: 18px;
     line-height: 24px;
     margin-top: 6px;
@@ -183,6 +204,7 @@
     &:nth-child(1) {
       width: 64px;
       margin-right: 33px;
+      border-top: 0;
     }
 
     &:nth-child(2) {
@@ -198,29 +220,29 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list-item {
+  .main-nav-list-item {
     font-size: 20px;
     line-height: 30px;
     margin: 3px 0 0;
 
     &:nth-child(1) {
-      margin-right: 37px;
-      width: 68px;
+      margin-right: 35px;
+      width: 70px;
     }
 
     &:nth-child(2) {
-      margin-right: 33px;
-      width: 171px;
+      margin-right: 30px;
+      width: 173px;
     }
 
     &:nth-child(3) {
-      width: 170px;
+      width: 174px;
       margin-left: 0;
     }
   }
 }
 
-.navigation-list-item-link {
+.main-nav-list-item-link {
   text-decoration: none;
   color: @basic-black-1;
 
@@ -233,7 +255,7 @@
   }
 }
 
-.navigation-list-item-link-page {
+.main-nav-list-item-link-page {
   color: @basic-black-1;
   text-decoration: none;
 
@@ -247,19 +269,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list-item-link {
+  .main-nav-list-item-link {
     text-decoration: none;
     color: @basic-white;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .navigation-list-item-link-active {
+  .main-nav-list-item-link-active {
     padding-bottom: 8px;
     border-bottom: 2px solid @basic-green-1;
   }
 
-  .navigation-list-item-link-active-page {
+  .main-nav-list-item-link-active-page {
     border-bottom: 2px solid @basic-green-1;
     color: @basic-black-1;
     padding-bottom: 5px;
@@ -268,7 +290,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list-item-link-active {
+  .main-nav-list-item-link-active {
     padding-bottom: 6px;
     pointer-events: none;
     color: @basic-white;

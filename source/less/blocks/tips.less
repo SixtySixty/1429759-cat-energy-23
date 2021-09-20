@@ -1,4 +1,4 @@
-@import url("colors.less");
+@import url("../colors.less");
 
 //code
 
@@ -44,7 +44,7 @@
 }
 
 .tip__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -142,7 +142,7 @@
 .tip-content {
   width: 227px;
   height: 90px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -171,14 +171,15 @@
 }
 
 .tip__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @basic-black-1;
-  background: url("../img/tip-footer__link-img__arrow.svg") no-repeat;
+  background-image: url("../img/tip-footer__link-img__arrow.svg");
+  background-repeat: no-repeat;
   text-decoration: none;
   padding: 19px 107px 18px 0;
   display: block;
@@ -188,13 +189,15 @@
   margin: 0 20px;
 
   &:hover {
-    background: url("../img/tip-footer__link-img__arrow2.svg") no-repeat;
+    background-image: url("../img/tip-footer__link-img__arrow2.svg");
+    background-repeat: no-repeat;
     background-position-x: 100px;
     background-position-y: 20px;
   }
 
   &:focus {
-    background: url("../img/tip-footer__link-img__arrow2.svg") no-repeat;
+    background-image: url("../img/tip-footer__link-img__arrow2.svg");
+    background-repeat: no-repeat;
     background-position-x: 100px;
     background-position-y: 20px;
     opacity: 0.3;
@@ -215,13 +218,15 @@
     background-position-y: 9px;
 
     &:hover {
-      background: url("../img/tip-footer__link-img__arrow2.svg") no-repeat;
+      background-image: url("../img/tip-footer__link-img__arrow2.svg");
+      background-repeat: no-repeat;
       background-position-x: 133px;
       background-position-y: 10px;
     }
 
     &:focus {
-      background: url("../img/tip-footer__link-img__arrow2.svg") no-repeat;
+      background-image: url("../img/tip-footer__link-img__arrow2.svg");
+      background-repeat: no-repeat;
       background-position-x: 133px;
       background-position-y: 10px;
       opacity: 0.3;

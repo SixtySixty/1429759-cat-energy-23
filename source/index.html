@@ -9,12 +9,12 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
   <header class="header">
-    <nav class="main-nav main-nav--closed main-nav-wrapper">
+    <nav class="main-nav main-nav--opened main-nav-wrapper">
       <div class="main-nav__user">
         <a class="main-nav__logo">
           <picture>
@@ -29,16 +29,16 @@
         <button class="main-nav__toggle" type="button">
         </button>
       </div>
-      <ul class="main-nav-list main-nav-list--closed navigation-list">
-        <li class="navigation-list-item">
-          <a class="navigation-list-item-link navigation-list-item-link-active">Главная</a>
+      <ul class="main-nav-list main-nav-list--closed">
+        <li class="main-nav-list-item">
+          <a class="main-nav-list-item-link main-nav-list-item-link-active">Главная</a>
         </li>
-        <li class="navigation-list-item">
-          <a href="catalog.html" class="navigation-list-item-link">Каталог
+        <li class="main-nav-list-item">
+          <a href="catalog.html" class="main-nav-list-item-link">Каталог
             продукции</a>
         </li>
-        <li class="navigation-list-item">
-          <a href="form.html" class="navigation-list-item-link">Подбор программы</a>
+        <li class="main-nav-list-item">
+          <a href="form.html" class="main-nav-list-item-link">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -49,7 +49,7 @@
         <div class="banner-discription">
           <h1 class="banner__title">Функциональное питание для котов</h1>
           <p class="banner__subtitle">Занялся собой? Займись котом!</p>
-          <button class="banner__button" type="button">подобрать программу</button>
+          <a href="form.html" class="banner__link">подобрать программу</a>
         </div>
         <picture class="banner__picture banner-picture">
           <source srcset="img/index-can.png, img/index-can@2.png 2x" media="(min-width: 1200px)">
@@ -123,13 +123,13 @@
             </p>
             <div class="example-description">
               <div class="example-description-cards">
-                <dl class="card card-weight">
-                  <dt class="card__title">5 КГ</dt>
-                  <dd class="card__text card__text--weight">снижение веса</dd>
+                <dl class="example-card card-weight">
+                  <dt class="example-card__title">5 КГ</dt>
+                  <dd class="example-card__text example-card__text--weight">снижение веса</dd>
                 </dl>
-                <dl class="card card-time">
-                  <dt class="card__title">60 ДНЕЙ</dt>
-                  <dd class="card__text card__text--time">затрачено времени</dd>
+                <dl class="example-card card-time">
+                  <dt class="example-card__title">60 ДНЕЙ</dt>
+                  <dd class="example-card__text example-card__text--time">затрачено времени</dd>
                 </dl>
               </div>
               <div class="example-description-cost">
@@ -139,8 +139,8 @@
             </div>
           </div>
         </div>
-        <div class="example__cat example-cat">
-          <div class="example-cat__wrapper">
+        <div class="slider-cat">
+          <div class="slider-cat__wrapper">
             <article class="comparison">
               <h2 class="visually-hidden">Слайдер</h2>
               <ul class="comparison__slides">
@@ -155,11 +155,11 @@
               <form class="comparison__controls">
                 <fieldset class="comparison__range-wrapper">
                   <a class="comparison__control" href="#before">
-                    <span class="example-slider-btn">было</span>
+                    <span class="slider-slider-btn">было</span>
                   </a>
                   <input class="comparison__range range" type="range" min="0" max="100" value="50" hidden="hidden" />
                   <a class="comparison__control comparison__control--right" href="#after">
-                    <span class="example-slider-btn">стало</span>
+                    <span class="slider-slider-btn">стало</span>
                   </a>
                 </fieldset>
                 <fieldset class="switcher comparison__switcher" role="radiogroup" hidden="hidden">
@@ -167,7 +167,7 @@
                     Comparison switcher
                   </legend>
                   <label class="comparison__control comparison__control--before" for="before-radio">
-                    <span class="example-slider-btn">было</span>
+                    <span class="slider-slider-btn">было</span>
                   </label>
                   <div class="switcher__wrapper">
                     <input class="switcher__radio" id="before-radio" type="radio" name="comparison-switcher"
@@ -177,7 +177,7 @@
                     <span class="switcher__thumb" aria-hidden="true"></span>
                   </div>
                   <label class="comparison__control comparison__control--after" for="after-radio">
-                    <span class="example-slider-btn">стало</span>
+                    <span class="slider-slider-btn">стало</span>
                   </label>
                 </fieldset>
               </form>
@@ -189,10 +189,10 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="map">
+      <div class="location">
         <div class="location-wrapper">
           <div class="location-address-wrapper">
-            <div class="location">
+            <div class="location-block">
               <div class="location__text">
                 <span class="location-text-start">приглашаем</span>
                 <span>к сотрудничеству дилеров!</span>
@@ -204,14 +204,9 @@
             </div>
           </div>
         </div>
-        <iframe class="map-widget"
+        <iframe class="location-widget"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac948352635ef835438d75c452dbbac3cedfc55c9a467317f09b9df079cd42922&amp;source=constructor"
           height="400"></iframe>
-        <!-- <picture class="map__picture">
-          <source srcset="img/location-desktop.jpg" media="(min-width: 1200px)">
-          <source srcset="img/location-tablet.jpg" media="(min-width: 768px)">
-          <img class="map__img" src="img/map__img.jpg" alt="Карта">
-        </picture> -->
       </div>
       <div class="contacts">
         <img class="contacts__logo" src="img/footer__logo-img__title.svg" alt="Cat energy">
@@ -278,7 +273,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/index.js"></script>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>
