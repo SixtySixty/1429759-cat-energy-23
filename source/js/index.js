@@ -5,7 +5,7 @@ if (switcher) {
 
   switcherWrapper.addEventListener("focusin", (evt) => {
     switcherWrapper.addEventListener("keydown", (evt) => {
-      if (event.key === "Enter" || event.key === " ") {
+      if (evt.key === "Enter" || evt.key === " ") {
         evt.preventDefault();
         toogleSwitch();
       }
@@ -92,6 +92,10 @@ if (compasion) {
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.querySelector('.main-nav__toggle');
   const nav = document.querySelector('.main-nav');
+  const navList = nav.querySelector('.main-nav-list');
+  navList.classList.add('main-nav-list-js');
+  nav.classList.add('main-nav--closed');
+  nav.classList.remove('main-nav--opened');
 
   btn.addEventListener('click', () => {
     nav.classList.toggle('main-nav--closed');
